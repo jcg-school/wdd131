@@ -44,6 +44,6 @@ aside {
 footer {
     grid-column: 1 / 5;
     grid-row: 4 / 5;
-    background: greenyellow;
     /*height: 25vh;*/
+    background: greenyellow;
 }
