@@ -10,14 +10,14 @@ header {
     background: lightpink;
 }
 
-.navigation {
+nav {
     grid-row: 2 / 3;
     background: whitesmoke;
     display: flex;
     align-items: center;
 }
 
-.navigation a {
+nav a {
 	display: block;
     padding: 0.75rem;
 	text-decoration: none;
