@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+:root {
+    --heading-font: Satisfy, 'Bradley Hand', sans-serif;
+    --paragraph-font: 'Noto Sans', Verdana, sans-serif;
+
+    --background-color: #aec3b0;
+    --emphasis-text-color: #213002;
+    --nav-hover-link-color: #e9e7e7;
+    --nav-hover-background-color: #758a77;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    max-width: 60rem;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: 60rem;
+    display: flex;
+    margin: 0.5rem;
+}
+
+nav {
+    display: flex;
+    background-color: var(--background-color);
+    justify-content: center;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+    color: var(--emphasis-text-color);
+}
+
+nav a:hover {
+	text-decoration: underline overline;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+section {
+    max-width: 50rem;
+}
+
+h2 {
+    padding: 0.2rem;
+}
+
+div {
+    display: flex;
+}
+
+.card {
+    border: 2px solid var(--emphasis-text-color);
+    padding: 0.5rem;
+    margin: 0.3rem;
+}
+
+.card p {
+    padding-right: 2rem;
+}
+
+.card img {
+    max-width: 250px;
+    padding-bottom: 2rem;
+}
+
+.card li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+}
