@@ -1,0 +1,116 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    /*the link method was used in the html, instead of the slower import method into css. This section is the css that put the linked font style into use with a backup of monospace*/
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* mobile setting are baseline settings*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 5rem;
+    background-color: #aec3b0;
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#menu::before {
+    content: "≡";
+    text-decoration: none;
+    position: absolute;
+    top: 1rem;
+    right: 13%;
+}
+
+.navigation li {
+    display: none;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+header h1 {
+    position: absolute;
+    top: 1rem;
+    left: 13%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline overline double;
+    border: 1px solid white;
+}
+
+.active {
+    color: purple;
+}
+
+main {
+    max-width: 75%;
+    margin: 0 auto;
+
+    display: flex; /*required for the figurecontainer class to work properly*/
+    justify-content: center;
+}
+
+figcaption {
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #aec3b0;
+    min-height: 5rem;
+}
