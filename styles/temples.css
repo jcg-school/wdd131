@@ -76,6 +76,7 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    color: #213002;
 }
 
 nav a:hover {
@@ -90,9 +91,16 @@ nav a:hover {
 main {
     max-width: 75%;
     margin: 0 auto;
+}
 
+.container {
     display: flex; /*required for the figurecontainer class to work properly*/
     justify-content: center;
+}
+
+main h2 {
+    text-align: center;
+    padding: 1rem;
 }
 
 figcaption {
