@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 body {
-    max-width: 1250px;
     margin: auto;
     min-height: 1vh;
 }
@@ -127,7 +126,7 @@ footer {
         display: none;
     }
 
-    h2 {
+    .card h2 {
         position: relative;
         text-align: left;
         background-color: var(--background-color);
