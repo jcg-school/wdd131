@@ -13,7 +13,6 @@ html {
 body {
     /*the link method was used in the html, instead of the slower import method into css. This section is the css that put the linked font style into use with a backup of monospace*/
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
 }

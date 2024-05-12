@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jareth Gish WDD 131 - place Project</title>
+    <title>Jareth Gish WDD 131 - Place Project</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jareth Gish - Place Project">
     <meta name="author" content="Jareth Gish">
     
@@ -20,21 +20,110 @@
 
 <body>
         <header>
-            <h1>Denver, Colorado</h1>
-            <nav>
-                <a id="menu" href="#"></a>
-                <ul class="navigation">
-                    <li><a href="#" title="home">Home</a></li>
-                    <li><a href="#" title="old">Old</a></li>
-                    <li><a href="#" title="new">New</a></li>
-                    <li><a href="#" title="large">Large</a></li>
-                    <li><a href="#" title="small">Small</a></li>
-                </ul>
-            </nav>
+            <h1>Welcome to Colorado!</h1>
+            <!--Header Hero / Background Image-->
+            <div class ="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                    <img src="images/hero-small.webp" alt="Colorado Mountain Range" width="523" height="150">
+                </picture>
+            </div>
         </header>
 
-        <main>
-            
+        <main><!--For both of the div headers, try using ::after in the large screen mode to modify presentation-->
+            <!--Data Div, Header, and undecorated bulleted list-->
+            <section class="card">
+                <h2>Data</h2>
+                <div class="datatable">
+                    <tbody>
+                        <div>
+                            <tr>
+                                <th><label class="title">Area: </label></th>
+                                <th><label class="value"> 104,180 Square Miles</label></th>
+                            </tr>
+                        </div>
+
+                        <div>
+                            <tr>
+                                <td><label class="title">Population: </label></td>
+                                <td><label class="value"> 5,877,610 People</label></td>
+                            </tr>
+                        </div>
+                    
+                        <div>
+                            <tr>
+                                <td><label class="title">Capital: </label></td>
+                                <td> Denver</td>
+                            </tr>
+                        </div>
+                    
+                        <div>
+                            <tr>
+                                <td><label class="title">Language: </label></td>
+                                <td> English</td>
+                            </tr>
+                        </div>
+                    
+                        <div>
+                            <tr>
+                                <td><label class="title">Currency: </label></td>
+                                <td> USD - $</td>
+                            </tr>
+                        </div>
+                    
+                        <div>
+                            <tr>
+                                <td><label class="title">Time Zone: </label></td>
+                                <td> MDT (<i>Mountain Daylight Time</i>)</td>
+                            </tr>
+                        </div>
+                    
+                        <div>
+                            <tr>
+                                <td><label class="title">Calling Codes: </label></td>
+                                <td> 303, 720, 719, 970</td>
+                            </tr>
+                        </div>
+                </tbody>
+            </div>
+            </section>
+            <!--Weather Div, SVG icon, simple data + JS Wind Chill-->
+            <section class="card">
+                <h2>Weather</h2>
+                <img src="images/partly-cloudy.svg" alt="Partly Cloudy Icon" id="weathersvg" width="5em">
+                <div class="weathertable">
+                    <tbody>
+                        <div>
+                            <tr>
+                                <th><label class="bold">Temperature: </label></th>
+                                <td> 58°F</td>
+                            </tr>
+                        </div>
+
+                        <div>
+                            <tr>
+                                <th><label class="bold">Conditions: </label></th>
+                                <td> Partly Cloudy</td>
+                            </tr>
+                        </div>
+                    
+                        <div>
+                            <tr>
+                                <th><label class="bold">Wind: </label></th>
+                                <td> SW 20 G 23 mph</td>
+                            </tr>
+                        </div>
+                    
+                        <div>
+                            <tr>
+                                <th><label class="bold">Wind Chill: </label></th>
+                                <td> 49.64°F</td>
+                            </tr>
+                        </div>
+                </tbody>
+            </div>
+            </section>
         </main>
 
         <footer>

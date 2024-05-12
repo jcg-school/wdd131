@@ -1,0 +1,69 @@
+:root {
+    --background-color: #aec3b0;
+    --emphasis-text-color: #213002;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1500px;
+    margin: auto;
+    min-height: 1vh;
+}
+
+/*header*/
+header {
+    background-color: var(--background-color);
+    padding-bottom: 1em;
+    
+}
+h1 {
+    color: var(--emphasis-text-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*main*/
+.card {
+    border: 2px dotted var(--emphasis-text-color);
+    width: auto;
+    background-color: rgba(240, 240, 240, 0.3);
+    text-align: center;
+}
+
+.card table {
+    width: 100%;
+}
+
+.title {
+    font-weight: 700;
+    width: 50%;
+    text-align: end;
+}
+
+.value {
+    width: 50%;
+    text-align: start;
+}
+
+#weathersvg {
+    max-width: 3em;
+}
+
+/*footer*/
+footer {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    min-height: 5rem;
+}
+
