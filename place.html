@@ -33,96 +33,74 @@
 
         <main><!--For both of the div headers, try using ::after in the large screen mode to modify presentation-->
             <!--Data Div, Header, and undecorated bulleted list-->
-            <section class="card">
+            <section class="card data">
                 <h2>Data</h2>
-                <div class="datatable">
-                    <tbody>
-                        <div>
+                    <div class="datatable">
+                        <table>
                             <tr>
-                                <th><label class="title">Area: </label></th>
-                                <th><label class="value"> 104,180 Square Miles</label></th>
+                                <th>Area: </th>
+                                <td> 104,180 Square Miles</td>
                             </tr>
-                        </div>
 
-                        <div>
                             <tr>
-                                <td><label class="title">Population: </label></td>
-                                <td><label class="value"> 5,877,610 People</label></td>
+                                <th>Population: </th>
+                                <td> 5,877,610 People</td>
                             </tr>
-                        </div>
                     
-                        <div>
                             <tr>
-                                <td><label class="title">Capital: </label></td>
+                                <th>Capital: </th>
                                 <td> Denver</td>
                             </tr>
-                        </div>
                     
-                        <div>
                             <tr>
-                                <td><label class="title">Language: </label></td>
+                                <th>Language: </th>
                                 <td> English</td>
                             </tr>
-                        </div>
                     
-                        <div>
                             <tr>
-                                <td><label class="title">Currency: </label></td>
+                                <th>Currency: </th>
                                 <td> USD - $</td>
                             </tr>
-                        </div>
                     
-                        <div>
                             <tr>
-                                <td><label class="title">Time Zone: </label></td>
+                                <th>Time Zone: </th>
                                 <td> MDT (<i>Mountain Daylight Time</i>)</td>
                             </tr>
-                        </div>
                     
-                        <div>
                             <tr>
-                                <td><label class="title">Calling Codes: </label></td>
+                                <th>Calling Codes: </th>
                                 <td> 303, 720, 719, 970</td>
                             </tr>
-                        </div>
-                </tbody>
-            </div>
+                        </table>
+                </div>
             </section>
             <!--Weather Div, SVG icon, simple data + JS Wind Chill-->
-            <section class="card">
+            <section class="card weather">
                 <h2>Weather</h2>
-                <img src="images/partly-cloudy.svg" alt="Partly Cloudy Icon" id="weathersvg" width="5em">
+                <img src="images/partly-cloudy.svg" alt="Partly Cloudy Icon" id="weathersvg" width="5">
                 <div class="weathertable">
-                    <tbody>
-                        <div>
+                    <table>
                             <tr>
-                                <th><label class="bold">Temperature: </label></th>
+                                <th>Temperature: </th>
                                 <td> 58°F</td>
                             </tr>
-                        </div>
 
-                        <div>
                             <tr>
-                                <th><label class="bold">Conditions: </label></th>
+                                <th>Conditions: </th>
                                 <td> Partly Cloudy</td>
                             </tr>
-                        </div>
-                    
-                        <div>
+
                             <tr>
-                                <th><label class="bold">Wind: </label></th>
+                                <th>Wind: </th>
                                 <td> SW 20 G 23 mph</td>
                             </tr>
-                        </div>
-                    
-                        <div>
+
                             <tr>
-                                <th><label class="bold">Wind Chill: </label></th>
+                                <th>Wind Chill: </th>
                                 <td> 49.64°F</td>
                             </tr>
-                        </div>
-                </tbody>
-            </div>
+                    </table>
+                </div>
             </section>
         </main>
 
