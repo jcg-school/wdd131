@@ -102,31 +102,36 @@ const temples = [
 
 
 temples.forEach(function(temple) {
-	// create the elements for the temple "card"
-	let card = document.createElement("section");
-	let name = document.createElement("h3");
-	let location = document.createElement("p");
-	let dedication = document.createElement("p");
-	let area = document.createElement("p");
-	let image = document.createElement("img");
+    // create the elements for the temple "card"
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let imageContainer = document.createElement("figure"); 
+    let image = document.createElement("img");
+    let caption = document.createElement("figcaption");
 
-	//fill in each element based one the values in the array objects. Add a class for CSS to style them
-	//card section element = array.value
-	name.textContent = temple.templeName;
-	location.innerHTML = `Location: ${temple.location}`;
-	dedication.innerHTML = `Dedication: ${temple.dedicated}`;
-	area.innerHTML = `Area: ${temple.area} sq ft`;
-	image.setAttribute("src", temple.imageURL)
-	image.setAttribute("alt", '${temple.templeName} Temple')
-	image.setAttribute("loading", "lazy")
+    name.textContent = temple.templeName;
+    location.textContent = `Location: ${temple.location}`;
+    dedication.textContent = `Dedication: ${temple.dedicated}`;
+    area.textContent = `Area: ${temple.area} sq ft`;
+    image.setAttribute("src", temple.imageUrl);
+    image.setAttribute("alt", `${temple.templeName} Temple`);
+    image.setAttribute("loading", "lazy");
+    caption.textContent = `${temple.templeName} Temple`;
 
-	//actually fill in the section in the viewport, based on each of the elements created originally in the card.
-	card.appendChild(name);
-	card.appendChild(location);
-	card.appendChild(dedication);
-	card.appendChild(area);
-	card.appendChild(image);
+    imageContainer.appendChild(image);
+    imageContainer.appendChild(caption);
+    
+    imageContainer.setAttribute("id", "temple-figure";
+    image.classList.add("temple-image");
+	
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(imageContainer); 
 
-	//put the whole card in the right place
-	document.querySelector(".container").appendChild(card);
-	});
+    document.querySelector(".container").appendChild(card);
+});
