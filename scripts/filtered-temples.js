@@ -126,7 +126,7 @@ temples.forEach(function(temple) {
     // imageContainer.setAttribute("id", "temple-figure");
     // image.classList.add("temple-image");
     caption.classList.add("screen-reader-only");
-    card.classList.add("figurecontainer");
+    // card.classList.add("figurecontainer");
 
     // image.style.height = "250px";
     // image.style.width = "250px";
