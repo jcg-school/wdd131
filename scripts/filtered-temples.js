@@ -102,7 +102,7 @@ const temples = [
 
 
 temples.forEach(function(temple) {
-    let card = document.createElement("section");
+    let card = document.createElement("div");
     let name = document.createElement("h3");
     let location = document.createElement("p");
     let dedication = document.createElement("p");
