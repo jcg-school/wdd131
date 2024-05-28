@@ -123,13 +123,13 @@ temples.forEach(function(temple) {
     imageContainer.appendChild(image);
     imageContainer.appendChild(caption);
     
-    imageContainer.setAttribute("id", "temple-figure");
-    image.classList.add("temple-image");
-
-    image.style.height = "250px"; // Set height to 250 pixels
-    image.style.width = "250px";  // Set width to 250 pixels
-    
+    // imageContainer.setAttribute("id", "temple-figure");
+    // image.classList.add("temple-image");
     caption.classList.add("screen-reader-only");
+    card.classList.add("figurecontainer");
+
+    // image.style.height = "250px";
+    // image.style.width = "250px";
 	
     card.appendChild(name);
     card.appendChild(location);
