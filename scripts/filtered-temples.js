@@ -100,27 +100,25 @@ const temples = [
   },
 ];
 
-createTempleCard();
 
-function createTempleCard() {
-	temples.forEach(temple -> {
+temples.forEach(function(temple) {
 	// create the elements for the temple "card"
-		let card = document.createElement("section");
-		let name = document.createElement("h3");
-		let location = document.createElement("p");
-		let dedication = document.createElement("p");
-		let area = document.createElement("p");
-		let image = document.createElement("img");
+	let card = document.createElement("section");
+	let name = document.createElement("h3");
+	let location = document.createElement("p");
+	let dedication = document.createElement("p");
+	let area = document.createElement("p");
+	let image = document.createElement("img");
 
 	//fill in each element based one the values in the array objects. Add a class for CSS to style them
 	//card section element = array.value
 	name.textContent = temple.templeName;
-	location.innerHTML = '<span>Location:</span> ${temple.location}';
-	dedication.innerHTML = '<span>Dedictaion:</span> ${temple.dedicated}';
-	area.innerHTML = '<span>Area:</span> ${temple.area} sq ft';
-	img.setAttribute("src", temple.imageURL)
-	img.setAttribute("alt", '${temple.templeName} Temple')
-	img.setAttribute("loading", "lazy")
+	location.innerHTML = `Location: ${temple.location}`;
+	dedication.innerHTML = `Dedication: ${temple.dedicated}`;
+	area.innerHTML = `Area: ${temple.area} sq ft`;
+	image.setAttribute("src", temple.imageURL)
+	image.setAttribute("alt", '${temple.templeName} Temple')
+	image.setAttribute("loading", "lazy")
 
 	//actually fill in the section in the viewport, based on each of the elements created originally in the card.
 	card.appendChild(name);
@@ -132,4 +130,3 @@ function createTempleCard() {
 	//put the whole card in the right place
 	document.querySelector(".container").appendChild(card);
 	});
-}
