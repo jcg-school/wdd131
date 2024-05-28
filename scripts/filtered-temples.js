@@ -74,4 +74,62 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   // Add more temple objects here...
+	{
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+	{
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+	{
+    templeName: "Adelaide, Australia",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
 ];
+
+createTempleCard();
+
+function createTempleCard() {
+	temples.forEach(temple -> {
+	// create the elements for the temple "card"
+		let card = document.createElement("section");
+		let name = document.createElement("h3");
+		let location = document.createElement("p");
+		let dedication = document.createElement("p");
+		let area = document.createElement("p");
+		let image = document.createElement("img");
+
+	//fill in each element based one the values in the array objects. Add a class for CSS to style them
+	//card section element = array.value
+	name.textContent = temple.templeName;
+	location.innerHTML = '<span>Location:</span> ${temple.location}';
+	dedication.innerHTML = '<span>Dedictaion:</span> ${temple.dedicated}';
+	area.innerHTML = '<span>Area:</span> ${temple.area} sq ft';
+	img.setAttribute("src", temple.imageURL)
+	img.setAttribute("alt", '${temple.templeName} Temple')
+	img.setAttribute("loading", "lazy")
+
+	//actually fill in the section in the viewport, based on each of the elements created originally in the card.
+	card.appendChild(name);
+	card.appendChild(location);
+	card.appendChild(dedication);
+	card.appendChild(area);
+	card.appendChild(image);
+
+	//put the whole card in the right place
+	document.querySelector(".container").appendChild(card);
+	});
+}
