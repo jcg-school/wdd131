@@ -102,7 +102,6 @@ const temples = [
 
 
 temples.forEach(function(temple) {
-    // create the elements for the temple "card"
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
@@ -124,8 +123,13 @@ temples.forEach(function(temple) {
     imageContainer.appendChild(image);
     imageContainer.appendChild(caption);
     
-    imageContainer.setAttribute("id", "temple-figure";
+    imageContainer.setAttribute("id", "temple-figure");
     image.classList.add("temple-image");
+
+    image.style.height = "250px"; // Set height to 250 pixels
+    image.style.width = "250px";  // Set width to 250 pixels
+    
+    caption.classList.add("screen-reader-only");
 	
     card.appendChild(name);
     card.appendChild(location);
