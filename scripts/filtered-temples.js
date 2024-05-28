@@ -126,6 +126,9 @@ temples.forEach(function(temple) {
     
     imageContainer.setAttribute("id", "temple-figure";
     image.classList.add("temple-image");
+
+    image.style.height = "200px"; // Set height to 250 pixels
+    image.style.width = "200px";  // Set width to 400 pixels
 	
     card.appendChild(name);
     card.appendChild(location);
