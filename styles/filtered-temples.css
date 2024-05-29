@@ -93,6 +93,7 @@ main {
 
 .container {
     display: flex; /*required for the figurecontainer class to work properly*/
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -104,6 +105,7 @@ main h2 {
 figcaption {
     font-size: smaller;
     margin-bottom: 10px;
+    display: none;
 }
 
 img {
