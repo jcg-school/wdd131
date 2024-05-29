@@ -101,6 +101,74 @@ const temples = [
 ];
 
 
+function createTempleCard(temple) {
+    let card = document.createElement("div");
+    card.innerHTML = `
+        <h3>${temple.templeName}</h3>
+        <p>Location: ${temple.location}</p>
+        <p>Dedication: ${temple.dedicated}</p>
+        <p>Area: ${temple.area} sq ft</p>
+        <figure>
+            <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy">
+            <figcaption class="screen-reader-only">${temple.templeName} Temple</figcaption>
+        </figure>
+    `;
+    return card;
+}
+
+function filterAndDisplayTemples(filterFunction) {
+    let container = document.querySelector('.container');
+    container.innerHTML = '';
+
+    let filteredTemples = temples.filter(filterFunction);
+
+    filteredTemples.forEach(function(temple) {
+        let card = createTempleCard(temple);
+        container.appendChild(card);
+    });
+}
+
+filterAndDisplayTemples(function() {
+    return true; // Return true for all temples (no filtering criteria)
+});
+
+document.querySelector('a[title="home"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    // Call filterAndDisplayTemples with no filtering criteria to show all temples
+    filterAndDisplayTemples(function() {
+        return true; // Return true for all temples (no filtering criteria)
+    });
+});
+
+document.querySelector('a[title="old"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    filterAndDisplayTemples(function(temple) {
+        return temple.dedicated <= 1900;
+    });
+});
+
+document.querySelector('a[title="new"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    filterAndDisplayTemples(function(temple) {
+        return temple.dedicated > 2000;
+    });
+});
+
+document.querySelector('a[title="large"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    filterAndDisplayTemples(function(temple) {
+        return temple.area >= 11000;
+    });
+});
+
+document.querySelector('a[title="small"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    filterAndDisplayTemples(function(temple) {
+        return temple.area <= 2000;
+    });
+});
+
+/*
 temples.forEach(function(temple) {
     let card = document.createElement("div");
     let name = document.createElement("h3");
@@ -139,3 +207,4 @@ temples.forEach(function(temple) {
 
     document.querySelector(".container").appendChild(card);
 });
+*/
