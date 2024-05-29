@@ -103,6 +103,8 @@ main {
     border: 1px solid rgba(174, 195, 176, 0.5);
     background-color: rgba(174, 195, 176, 0.8);
     border-radius: 5px;
+    flex: 1; /* Allow items to grow to fill container */
+    flex-basis: 0; /* Ensure items share the available width equally */
 }
 
 main h2 {
