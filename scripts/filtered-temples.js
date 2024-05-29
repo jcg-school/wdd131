@@ -157,14 +157,14 @@ document.querySelector('a[title="new"]').addEventListener('click', function(even
 document.querySelector('a[title="large"]').addEventListener('click', function(event) {
     event.preventDefault();
     filterAndDisplayTemples(function(temple) {
-        return temple.area >= 11000;
+        return temple.area >= 90000;
     });
 });
 
 document.querySelector('a[title="small"]').addEventListener('click', function(event) {
     event.preventDefault();
     filterAndDisplayTemples(function(temple) {
-        return temple.area <= 2000;
+        return temple.area <= 10000;
     });
 });
 
