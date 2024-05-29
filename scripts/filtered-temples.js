@@ -103,6 +103,7 @@ const temples = [
 
 function createTempleCard(temple) {
     let card = document.createElement("div");
+    card.classList.add("temple-card");
     card.innerHTML = `
         <h3>${temple.templeName}</h3>
         <p>Location: ${temple.location}</p>
