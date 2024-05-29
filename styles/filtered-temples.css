@@ -152,6 +152,11 @@ footer {
         flex-wrap: wrap;
 	justify-content: space-between;
     }
+
+    .temple-card {
+        flex-basis: calc(33.33% - 10px); /* Adjust the calc value to account for margin and spacing */
+        max-width: calc(33.33% - 10px); /* Set max-width to limit items to one-third of the container width */
+    }
 	
     .navigation {
 		display: flex;
