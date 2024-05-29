@@ -143,14 +143,16 @@ document.querySelector('a[title="home"]').addEventListener('click', function(eve
 document.querySelector('a[title="old"]').addEventListener('click', function(event) {
     event.preventDefault();
     filterAndDisplayTemples(function(temple) {
-        return temple.dedicated <= 1900;
+        let year = parseInt(temple.dedicated.slice(0, 4));
+        return year <= 1900;
     });
 });
 
 document.querySelector('a[title="new"]').addEventListener('click', function(event) {
     event.preventDefault();
     filterAndDisplayTemples(function(temple) {
-        return temple.dedicated > 2000;
+        let year = parseInt(temple.dedicated.slice(0, 4));
+        return year > 2000;
     });
 });
 
