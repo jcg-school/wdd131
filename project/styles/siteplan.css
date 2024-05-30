@@ -37,10 +37,9 @@ h1, h2, h3 {
 }
 
 th {
-    /* Check for any properties that might cause fading */
-  opacity: 1; /* Ensure opacity is set to 1 */
-  text-shadow: none; /* Ensure no text shadow is applied */
-  filter: none; /* Ensure no filter is applied */
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer {
