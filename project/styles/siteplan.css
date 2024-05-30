@@ -37,10 +37,6 @@ h1, h2, h3 {
 }
 
 th {
-    /*th was doing funny formatting things.. this is the fix*/
-    font-family: var(--paragraph-font);
-    font-weight: 800;
-    font-style: normal;
     text-align: end;
 }
 
@@ -52,3 +48,6 @@ footer {
     background-color: var(--background-color);
     text-align: center;
 }
+
+@media (min-width: 50em) {
+@media (min-width: 50em) {}
