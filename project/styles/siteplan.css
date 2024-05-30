@@ -26,14 +26,21 @@ body {
     font-style: normal;
 }
 
+header {
+    text-align: center;
+}
+
 h1, h2, h3 {
   font-family:  var(--heading-font);
   font-weight: 400;
   font-style: normal;
 }
 
-header {
-    text-align: center;
+th {
+    /* Check for any properties that might cause fading */
+  opacity: 1; /* Ensure opacity is set to 1 */
+  text-shadow: none; /* Ensure no text shadow is applied */
+  filter: none; /* Ensure no filter is applied */
 }
 
 footer {
