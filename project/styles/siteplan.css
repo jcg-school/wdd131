@@ -36,7 +36,7 @@ header {
 
 nav {
     min-height: 100%;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .border { /*view the size, positioning, and edges of the boxes, and their layer in the DOM*/
