@@ -30,13 +30,10 @@ header {
     text-align: center;
 }
 
-main {
-    text-align: center;
-}
-
-footer {
-    background-color: var(--background-color);
-    text-align: center;
+.border {
+    border: 1px solid rgba(174, 195, 176, 0.5);
+    background-color: rgba(174, 195, 176, 0.8);
+    border-radius: 5px;
 }
 
 h1, h2, h3 {
@@ -53,14 +50,21 @@ td {
     text-align: start;
 }
 
-@media (min-width: 32rem) {
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+@media (min-width: 37.5rem) {
     main{
         text-align: left;
+        max-width: 80%;
     }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 64rem) {
     main{
         text-align: right;
+        max-width: 80%;
     }
 }
