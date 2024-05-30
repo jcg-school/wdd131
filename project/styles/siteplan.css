@@ -1,1 +1,42 @@
+:root {
+    --heading-font: "Berkshire Swash", serif;
+    --paragraph-font: "Bellefair", serif;
 
+    --background-color: #aec3b0; /*contemplative brown*/
+    --primary-emphasis-color: #213002; /*fantasy yellow*/
+  
+    --standard-text-color: #e9e7e7; /*simple and clean soft white*/
+  
+    --action-invitation-color: #e9e7e7; /*softer healthy purple*/
+      
+    --nav-hover-link-color: #e9e7e7; /*maybe soft green just for that contrast ot highlight the interactability*/
+    --nav-hover-background-color: #758a77; /*brighter purple to encourage interaction*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*the link method was used in the html, instead of the slower import method into css. This section is the css that put the linked font style variable*/
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family:  var(--heading-font);
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+}
