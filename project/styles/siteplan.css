@@ -30,6 +30,10 @@ header {
     text-align: center;
 }
 
+.header-flex {
+    display: flex;
+}
+
 .border { /*view the size, positioning, and edges of the boxes, and their layer in the DOM*/
     border: 3px solid rgba(174, 195, 176, 0.5);
     background-color: rgba(174, 195, 176, 0.8);
@@ -69,13 +73,8 @@ footer {
 }
 
 @media (min-width: 64rem) {
-    body {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
     
     main{
         text-align: right;
-        margin-right: 10%;
     }
 }
