@@ -49,5 +49,14 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 50em) {
-@media (min-width: 50em) {}
+@media (min-width: 32rem) {
+    main{
+        text-align: left;
+    }
+}
+
+@media (min-width: 50rem) {
+    main{
+        text-align: right;
+    }
+}
