@@ -34,13 +34,18 @@ header {
     display: flex;
 }
 
+.nav-div {
+    min-width: 100%;
+    align-content: flex-end;
+}
+
 nav {
     text-align: right;
     justify-content: space-around;
 }
 
 nav a {
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .border { /*view the size, positioning, and edges of the boxes, and their layer in the DOM*/
