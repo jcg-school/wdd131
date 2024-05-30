@@ -36,8 +36,11 @@ header {
 
 nav {
     text-align: right;
-    vertical-align: bottom;
     justify-content: space-around;
+}
+
+nav a {
+    vertical-align: middle;
 }
 
 .border { /*view the size, positioning, and edges of the boxes, and their layer in the DOM*/
