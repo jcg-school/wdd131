@@ -34,8 +34,11 @@ header {
     display: flex;
 }
 
+.header-flex h1 {
+    align-content: flex-start;
+}
+
 .nav-div {
-    min-width: 100%;
     min-height: 100%;
     align-content: flex-end;
 }
