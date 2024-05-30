@@ -41,7 +41,7 @@ header {
 .nav-div {
     min-height: 100%;
     position: relative;
-    left: 0.5rem;
+    left: 100%;
     align-content: flex-end;
 }
 
