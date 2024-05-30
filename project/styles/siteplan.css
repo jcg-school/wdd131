@@ -32,17 +32,8 @@ header {
 
 .header-flex {
     display: flex;
-}
-
-.header-flex h1 {
-    align-content: flex-start;
-}
-
-.nav-div {
-    min-height: 100%;
-    position: relative;
-    left: 100%;
-    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
