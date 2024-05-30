@@ -36,7 +36,8 @@ h1, h2, h3 {
   font-style: normal;
 }
 
-th {
+.statheader {
+    /*th was doing funny formatting things.. this is the fix*/
     font-family: var(--paragraph-font);
     font-weight: 400;
     font-style: normal;
