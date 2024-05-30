@@ -9,7 +9,7 @@
   
     --action-invitation-color: #e9e7e7; /*softer healthy purple*/
       
-    --nav-hover-link-color: #e9e7e7; /*maybe soft green just for that contrast ot highlight the interactability*/
+    --nav-hover-link-color: #e9e7e7; /*maybe soft green just for that contrast to highlight the interactability*/
     --nav-hover-background-color: #758a77; /*brighter purple to encourage interaction*/
 }
 
@@ -30,6 +30,15 @@ header {
     text-align: center;
 }
 
+main {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
 h1, h2, h3 {
   font-family:  var(--heading-font);
   font-weight: 400;
@@ -42,11 +51,6 @@ th {
 
 td {
     text-align: start;
-}
-
-footer {
-    background-color: var(--background-color);
-    text-align: center;
 }
 
 @media (min-width: 32rem) {
