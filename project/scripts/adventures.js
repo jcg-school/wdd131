@@ -58,50 +58,39 @@ const creatureType = [
     {
       creatureName: "Owl-fox",
       creatureHome: "Woodlands, Plains",
-      creatureDetails:"The owl-fox is a creature well-known for it's ability to move silently both through the air and on the ground. While a predator itself, these hard-to-catch creatures are often hunted for their pelts, which make surprisingly quiet clothes and armor.",
-      imageUrl:""
+      creatureDetails: "The owl-fox is a creature well-known for its ability to move silently both through the air and on the ground. While a predator itself, these hard-to-catch creatures are often hunted for their pelts, which make surprisingly quiet clothes and armor.",
+      imageUrl: "images/owl-fox.jpg"
     },
-
     {
         creatureName: "Korusk Clam",
         creatureHome: "Coasts",
-        creatureDetails:"Korusk clams are massive clams of impressive strength and durability. Their clamshells prove to be effective, if heavy, breastplates and shields. And they are as good as any bear trap for any shoreline blunderers.",
-        imageUrl:""
-      },
-
-      {
+        creatureDetails: "Korusk clams are massive clams of impressive strength and durability. Their clamshells prove to be effective, if heavy, breastplates and shields. And they are as good as any bear trap for any shoreline blunderers.",
+        imageUrl: "images/korusk-clam.jpg"
+    },
+    {
         creatureName: "Saddle-pede",
         creatureHome: "Underground",
-        creatureDetails:"These centi-steeds are an ancient organism that thrive deep underground. These mounts can climb extremely quickly, they have a cpaable bite, and they are uniquely agile and flexible. The primary downside is that without special training and mounting equipment they are next to impossible to ride. If you've ever tried to ride a bull spiraling into a cave you can barely fit in then you'll know what we mean",
-        imageUrl:""
-      },
-
-      {
+        creatureDetails: "These centi-steeds are an ancient organism that thrive deep underground. These mounts can climb extremely quickly, they have a capable bite, and they are uniquely agile and flexible. The primary downside is that without special training and mounting equipment they are next to impossible to ride. If you've ever tried to ride a bull spiraling into a cave you can barely fit in then you'll know what we mean.",
+        imageUrl: "images/saddle-pede.jpg"
+    },
+    {
         creatureName: "Dreadlegs",
         creatureHome: "Shadowfeel",
-        creatureDetails:"The dreadlegs is a large spider with ten eyes and ten legs from the shadowfeel realm - it feeds off of anxiety, fear, and unsurety. While it can be weakened by working to calm those nearby or involved, once one of these spawn it needs to be faced head on - paralytic bite and all. When a dreadlegs manifests it prefers to find dark corners that are off the ground. Rather than attack head on, dreadlegs usually sit, watch, and wait continuing to feed on growing fear until it decides it is time to move on. Many dreadlegs have the ability to appear larger than they really are - but some really are that big. Watch out.",
-        imageUrl:""
-      },
+        creatureDetails: "The dreadlegs is a large spider with ten eyes and ten legs from the shadowfeel realm - it feeds off of anxiety, fear, and unsurety. While it can be weakened by working to calm those nearby or involved, once one of these spawn it needs to be faced head on - paralytic bite and all. When a dreadlegs manifests it prefers to find dark corners that are off the ground. Rather than attack head on, dreadlegs usually sit, watch, and wait continuing to feed on growing fear until it decides it is time to move on. Many dreadlegs have the ability to appear larger than they really are - but some really are that big. Watch out.",
+        imageUrl: "images/dreadlegs.webp"
+    }
+];
 
-      /*{
-        creatureName: " ",
-        creatureHome: " ",
-        creatureDetails:"",
-        imageUrl:""
-      },*/
-  ];
-
-  function createCreatureCard(creature) {
+function createCreatureCard(creature) {
     let card = document.createElement("div");
     card.classList.add("creature-card");
+    
+    card.style.backgroundImage = `url('${creature.imageUrl}')`;
+
     card.innerHTML = `
         <h3>${creature.creatureName}</h3>
         <p>Home: ${creature.creatureHome}</p>
         <p>${creature.creatureDetails}</p>
-        <figure>
-            <img src="${creature.imageUrl}" alt="${creature.creatureName}" loading="lazy">
-            <figcaption class="screen-reader-only">${creature.creatureName}</figcaption>
-        </figure>
     `;
     return card;
 }
@@ -117,6 +106,8 @@ function filterAndDisplayCreatures(filterFunction) {
         container.appendChild(card);
     });
 }
+
+filterAndDisplayCreatures(() => true);
 
 document.querySelector('a[title="all"]').addEventListener('click', event => {
     event.preventDefault();
