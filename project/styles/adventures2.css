@@ -124,36 +124,18 @@ footer {
     width: 100%;
     background-color: var(--action--item-bg-color);
 
-    border-radius: 5px;
+    border-radius: 1px;
     border-style: solid;
     border-width:  2px;
     border-top: none;
     border-left: none;
     border-right: none;
     border-color: var(--action-text-color);
-    position: relative;
-    /*top: -5px;
-    left:-5px;*/
 }
-
-/*.special-content-box nav ul {
-    position: relative;
-    top: -5px;
-    left:-5px;
-}*/
 
 .special-content-box nav ul li {
     padding-right: 0;
 }
-
-/*.special-content-box nav ul li a {
-    border-radius: 0px;
-    border-style: solid;
-    border-width:  2px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}*/
 
 .hide-details {
     display: none;
