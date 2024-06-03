@@ -210,7 +210,55 @@ footer {
     content: "X";
 }
 
-
+.creature-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .creature-card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .creature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for transparency */
+    z-index: 1; /* Ensures the overlay is below the text */
+  }
+  
+  .creature-card h3,
+  .creature-card p {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the overlay */
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .creature-card h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  
+  .creature-card p {
+    font-size: 0.85em;
+    margin-bottom: 10px;
+  }
 
 @media (min-width: 64rem) {
     #mobile-menu {
@@ -229,4 +277,19 @@ footer {
         margin: 0.5rem;
         background-color: var(--action-item-bg-color);
     }
+
+    .creature-card {
+        width: 300px;
+        height: 400px;
+        padding: 0;
+      }
+    
+      .creature-card h3 {
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+    
+      .creature-card p {
+        font-size: 1em;
+      }
 }
