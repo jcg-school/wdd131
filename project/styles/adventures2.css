@@ -133,7 +133,7 @@ footer {
     background-color: var(--special-content-bg-color);
     border-width: 3px;
     border-style: solid;
-    border-color: var(--background-color);
+    border-color: var(--html-background-color);
     border-radius: 5px;
     min-width: 100%;
 }
@@ -160,7 +160,6 @@ footer {
 
 .special-content-box nav ul li {
     padding-right: 0;
-    background-color: var(--nav-hover-background-color);
 }
 
 .hide-details {
