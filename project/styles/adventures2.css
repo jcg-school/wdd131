@@ -24,12 +24,15 @@
 }
 
 html {
-    background-color: var(--html-background-color);
+    background-color: var(--action--item-bg-color);
 }
 
 body {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    padding-left: 1%;
+    padding-right: 1%;
 
     font-family: var(--paragraph-font);
     font-weight: 400;
@@ -118,7 +121,7 @@ footer {
 
 .special-content-box {
     margin-top: 3px;
-    background-color: aliceblue;
+    background-color: var(--special-content-bg-color);
     border-width: 3px;
     border-style: solid;
     border-color: var(--background-color);
