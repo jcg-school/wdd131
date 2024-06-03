@@ -4,15 +4,15 @@
 
     --html-background-color: #BDE0FE;
     --body-bg-color: #A2D2FF;
+    --general-text-color: #FFAFCC;
 
-    --action-item-bg-color: #FFAFCC;
+    --action-item-bg-color: #CDB4DB;
     --action-text-color: #FFC8DD;
   
     --special-content-bg-color: aliceblue;
-  
     
-    --nav-hover-background-color: #FFAFCC;
-    --nav-hover-link-color: #FFC8DD;
+    --nav-hover-background-color: #766381;
+    --nav-hover-link-color: #6e4655;
 }
 
 * {
@@ -21,14 +21,8 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: var(--html-background-color);
-}
-
 body {
-    padding: 1.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    padding: 2rem;
 
     font-family: var(--paragraph-font);
     font-weight: 400;
