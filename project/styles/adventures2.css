@@ -51,6 +51,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -145,6 +146,9 @@ footer {
     margin-top: 5%;
 }
 
+#mobile-menu {
+    text-decoration: none;
+}
 
 .nav-menu {
     display: none;
@@ -176,7 +180,5 @@ footer {
 }
 
 /*@media (min-width: 64rem) {
-    #mobile-menu {
-    text-decoration: none;
-}
+    
 }*/
