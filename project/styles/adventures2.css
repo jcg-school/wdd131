@@ -227,6 +227,8 @@ footer {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1; 
+    flex-basis: 0; 
   }
   
   .creature-card::before {
@@ -236,14 +238,14 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for transparency */
-    z-index: 1; /* Ensures the overlay is below the text */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
   }
   
   .creature-card h3,
   .creature-card p {
     position: relative;
-    z-index: 2; /* Ensures the text is above the overlay */
+    z-index: 2; 
     margin: 0;
     padding: 10px;
     color: #fff;
@@ -279,8 +281,8 @@ footer {
     }
 
     .creature-card {
-        width: 300px;
-        height: 400px;
+        flex-basis: calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px); 
         padding: 0;
       }
     
