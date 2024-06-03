@@ -123,6 +123,13 @@ footer {
     justify-content: start;
     text-align: left;
     width: 100%;
+    background-color: var(--action--item-bg-color);
+    border-radius: 0px;
+    border-style: solid;
+    border-width:  2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .special-content-box nav ul {
@@ -135,14 +142,14 @@ footer {
     padding-right: 0;
 }
 
-.special-content-box nav ul li a {
+/*.special-content-box nav ul li a {
     border-radius: 0px;
     border-style: solid;
     border-width:  2px;
     border-top: none;
     border-left: none;
     border-right: none;
-}
+}*/
 
 .hide-details {
     display: none;
