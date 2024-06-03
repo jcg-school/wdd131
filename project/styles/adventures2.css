@@ -10,7 +10,7 @@
   
     --special-content-bg-color: aliceblue;
   
-    --action--item-bg-color: #4b1db8;
+    --action-item-bg-color: #4b1db8;
     --action-text-color: #f8e008;
     
     --nav-hover-background-color: #230b92;
@@ -24,7 +24,7 @@
 }
 
 html {
-    background-color: var(--action--item-bg-color);
+    background-color: var(--html-background-color);
 }
 
 body {
@@ -39,6 +39,17 @@ body {
     font-style: normal;
     font-size: large;
 
+    background-color: var(--action-item-bg-color);
+
+    border-radius: 1px;
+    border-style: solid;
+    border-width:  2px;
+    border-top: none;
+    border-bottom: none;
+    border-color: var(--action-text-color);
+}
+
+.special-border-div {
     background-color: var(--body-bg-color);
 
     border-radius: 1px;
@@ -84,7 +95,7 @@ nav ul li a {
     cursor: pointer;
     text-align: center;
     display: inline-block;
-    background-color: var(--action--item-bg-color);
+    background-color: var(--action-item-bg-color);
     padding: 10px 20px;
     color:var(--action-text-color);
     border-radius: 5px;
@@ -133,7 +144,7 @@ footer {
     justify-content: start;
     text-align: left;
     width: 100%;
-    background-color: var(--action--item-bg-color);
+    background-color: var(--action-item-bg-color);
 
     border-radius: 1px;
     border-style: solid;
@@ -162,6 +173,7 @@ footer {
 
 #mobile-menu {
     text-decoration: none;
+    text-align: right;
 }
 
 .nav-menu {
@@ -174,13 +186,13 @@ footer {
     padding: 10px 15px;
     text-decoration: none;
     color:var(--action-text-color);
-    background-color: var(--action--item-bg-color);
+    background-color: var(--action-item-bg-color);
     border-radius: 5px;
 }
 
 .header-flex nav {
     color:var(--action-text-color);
-    background-color: var(--action--item-bg-color);
+    background-color: var(--action-item-bg-color);
     border-radius: 5px;
 }
 
