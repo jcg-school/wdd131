@@ -28,7 +28,8 @@ html {
 }
 
 body {
-    padding: 2rem;
+    margin-left: 2%;
+    margin-right: 2%;
 
     font-family: var(--paragraph-font);
     font-weight: 400;
@@ -36,6 +37,13 @@ body {
     font-size: large;
 
     background-color: var(--body-bg-color);
+
+    border-radius: 1px;
+    border-style: solid;
+    border-width:  2px;
+    border-top: none;
+    border-bottom: none;
+    border-color: var(--action-text-color);
 }
 
 .header-flex {
