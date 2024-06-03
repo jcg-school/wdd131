@@ -31,26 +31,24 @@ body {
     margin-left: 1%;
     margin-right: 1%;
 
-    padding-left: 1%;
-    padding-right: 1%;
-
     font-family: var(--paragraph-font);
     font-weight: 400;
     font-style: normal;
     font-size: large;
 
-    background-color: var(--action-item-bg-color);
+    background-color: var(--body-bg-color);
 
     border-radius: 1px;
     border-style: solid;
     border-width:  2px;
     border-top: none;
     border-bottom: none;
-    border-color: var(--action-text-color);
+    border-color: var(--action-item-bg-color);
 }
 
 .special-border-div {
-    background-color: var(--body-bg-color);
+    padding-left: 1%;
+    padding-right: 1%;
 
     border-radius: 1px;
     border-style: solid;
