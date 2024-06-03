@@ -115,6 +115,7 @@ footer {
     border-style: solid;
     border-color: var(--background-color);
     border-radius: 5px;
+    min-width: 100%;
 }
 
 .special-content-box nav {
