@@ -219,7 +219,12 @@ footer {
         display: block;
     }
 
+    .header-flex nav {
+        background: rgba(0, 0, 0, 0);
+    }
+
     .nav-menu li {
         margin: 0.5rem;
+        background-color: var(--action-item-bg-color);
     }
 }
