@@ -15,35 +15,27 @@ const lastModifiedDate = new Date(document.lastModified);
 const formattedLastModifiedDate = `${lastModifiedDate.toLocaleDateString()} ${lastModifiedDate.toLocaleTimeString()}`;
 lastModifiedDateElementSelector.textContent = formattedLastModifiedDate;
 
-/* // About Hylandia, get one section to appear at a time...*/
-// Get the elements containing the content
 const theRealm = document.querySelector('#hylandia');
 const citySanctuary = document.querySelector('#sanctuary');
 const shadoworest = document.querySelector('#shadowfeel');
 
-// Function to handle the click event
 function handleClick(event) {
-    event.preventDefault(); // Prevent the default link behavior
+    event.preventDefault();
 
-    // Check if the clicked link is one of the specific links
     if (event.currentTarget.getAttribute('title') === 'hylandia' ||
         event.currentTarget.getAttribute('title') === 'sanctuary' ||
         event.currentTarget.getAttribute('title') === 'shadowfeel') {
 
-        // Get the target ID from the clicked link's title attribute
         const targetId = event.currentTarget.getAttribute('title');
 
-        // Remove 'show-details' and 'hide-details' classes from all elements
         theRealm.classList.remove('show-details', 'hide-details');
         citySanctuary.classList.remove('show-details', 'hide-details');
         shadoworest.classList.remove('show-details', 'hide-details');
 
-        // Add 'hide-details' class to all elements
         theRealm.classList.add('hide-details');
         citySanctuary.classList.add('hide-details');
         shadoworest.classList.add('hide-details');
 
-        // Add 'show-details' class to the clicked element's corresponding content
         if (targetId === 'hylandia') {
             theRealm.classList.add('show-details');
             theRealm.classList.remove('hide-details');
@@ -57,7 +49,6 @@ function handleClick(event) {
     }
 }
 
-// Attach event listener to all navigation links
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', handleClick);
 });
