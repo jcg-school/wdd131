@@ -45,10 +45,117 @@ body {
     padding-bottom: 1rem;
 }
 
+nav {
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 0.5rem;
+}
+
+nav ul li a {
+    font-size: large;
+    /*make like a button*/
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--action--item-bg-color);
+    padding: 10px 20px;
+    color:var(--action-text-color);
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+} 
+
+h1, h2, h3 {
+    font-family:  var(--heading-font);
+    font-weight: 400;
+    font-style: normal;
+  }
+
+ main {
+    padding: 1rem;
+ }
+
+ p {
+    padding-bottom: 0.5rem;
+  }
+
+ img {
+    padding-bottom: 0.5rem;
+    width: 100%;
+    height: auto;
+ }
+
+footer {
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.special-content-box {
+    margin-top: 3px;
+    padding: .3rem;
+    background-color: aliceblue;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.special-content-box nav {
+    justify-content: start;
+    text-align: left;
+    width: 100%;
+}
+
+.special-content-box nav ul {
+    position: relative;
+    bottom: -5px;
+    left:-5px;
+}
+
+.special-content-box nav ul li {
+    padding-right: 0;
+}
+
+.special-content-box nav ul li a {
+    border-radius: 0px;
+    border-style: solid;
+    border-width:  2px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.hide-details {
+    display: none;
+}
+
+.show-details {
+    display: block;
+}
+
+.spacer {
+    margin-top: 5%;
+}
+
 /*@media (min-width: 64rem) {
-    nav {
-        display: flex;
-        text-align: right;
-        justify-content: space-around;
-    }
+    #mobile-menu {
+    text-decoration: none;
+}
 }*/
