@@ -218,4 +218,8 @@ footer {
     .nav-menu {
         display: block;
     }
+
+    .nav-menu li {
+        padding-right: 0.5rem;
+    }
 }
