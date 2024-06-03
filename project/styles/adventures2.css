@@ -265,10 +265,14 @@ footer {
   }
 
 @media (min-width: 64rem) {
+
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     #mobile-menu {
         display: none;
     }
-
     .nav-menu {
         display: block;
     }
@@ -288,12 +292,12 @@ footer {
         padding: 0;
       }
     
-      .creature-card h3 {
+    .creature-card h3 {
         font-size: 1.5em;
         margin-top: 20px;
       }
     
-      .creature-card p {
+    .creature-card p {
         font-size: 1em;
       }
 }
