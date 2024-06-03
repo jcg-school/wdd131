@@ -98,6 +98,10 @@ footer {
     padding: 0.2rem;
 }
 
+.sizer {
+    min-width: 100%;
+}
+
 .special-content-box {
     margin-top: 3px;
     padding: .3rem;
