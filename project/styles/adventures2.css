@@ -28,8 +28,8 @@ html {
 }
 
 body {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
 
     font-family: var(--paragraph-font);
     font-weight: 400;
@@ -40,7 +40,7 @@ body {
 
     border-radius: 1px;
     border-style: solid;
-    border-width:  2px;
+    border-width:  0.5%;
     border-top: none;
     border-bottom: none;
     border-color: var(--action-item-bg-color);
@@ -52,7 +52,7 @@ body {
 
     border-radius: 1px;
     border-style: solid;
-    border-width:  2px;
+    border-width:  0.5%;
     border-top: none;
     border-bottom: none;
     border-color: var(--action-text-color);
