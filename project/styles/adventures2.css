@@ -153,12 +153,14 @@ footer {
     border-color: var(--action-text-color);
 }
 
+.special-content-box nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
 .special-content-box nav ul li {
     padding-right: 0;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: var(--nav-hover-background-color);
-    border-width: 2px;
+    background-color: var(--nav-hover-background-color);
 }
 
 .hide-details {
