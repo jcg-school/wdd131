@@ -102,11 +102,10 @@ h1, h2, h3 {
 
 footer {
     text-align: center;
-    padding: 0.2rem;
 }
 
 .sizer {
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 .special-content-box {
