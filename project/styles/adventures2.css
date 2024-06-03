@@ -210,6 +210,12 @@ footer {
     content: "X";
 }
 
-/*@media (min-width: 64rem) {
-    
-}*/
+@media (min-width: 64rem) {
+    #mobile-menu {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+}
