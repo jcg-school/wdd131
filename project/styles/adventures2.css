@@ -1,0 +1,54 @@
+:root {
+    --heading-font: "Berkshire Swash", serif;
+    --paragraph-font: "Bellefair", serif;
+
+    --html-background-color: #BDE0FE;
+    --body-bg-color: #A2D2FF;
+
+    --action-item-bg-color: #FFAFCC;
+    --action-text-color: #FFC8DD;
+  
+    --special-content-bg-color: aliceblue;
+  
+    
+    --nav-hover-background-color: #FFAFCC;
+    --nav-hover-link-color: #FFC8DD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--html-background-color);
+}
+
+body {
+    padding: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: var(--body-bg-color);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 1rem;
+}
+
+/*@media (min-width: 64rem) {
+    nav {
+        display: flex;
+        text-align: right;
+        justify-content: space-around;
+    }
+}*/

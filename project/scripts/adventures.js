@@ -67,28 +67,28 @@ const creatureType = [
     {
       creatureName: "Owl-fox",
       creatureHome: "Woodlands, Plains",
-      creatureDetails:"The owl-fox is a creature well-known for it's ability to move silently both through the air and on the ground. While a predator itself, these hard-to-catch creatures are often hunted for their pelts, which make surprisingly silent clothes and armor.",
+      creatureDetails:"The owl-fox is a creature well-known for it's ability to move silently both through the air and on the ground. While a predator itself, these hard-to-catch creatures are often hunted for their pelts, which make surprisingly quiet clothes and armor.",
       imageUrl:""
     },
 
     {
         creatureName: "Korusk Clam",
         creatureHome: "Coasts",
-        creatureDetails:"Korusk clams are massive clams of impressive strength and durability. Their clamshells prove to be effective, if heavy, brestplates and shields. And they are as good as any bear trap for any would be blunderers.",
+        creatureDetails:"Korusk clams are massive clams of impressive strength and durability. Their clamshells prove to be effective, if heavy, breastplates and shields. And they are as good as any bear trap for any shoreline blunderers.",
         imageUrl:""
       },
 
       {
         creatureName: "Saddle-pede",
         creatureHome: "Underground",
-        creatureDetails:"These centi-steeds are an ancient organism that thrive deep underground. These mounts can climb extremely quickly, they have a cpaable bite, and they are uniquely agile and flexible. The primary downside is that without special training and mounting equipment they are next to impossible to ride.",
+        creatureDetails:"These centi-steeds are an ancient organism that thrive deep underground. These mounts can climb extremely quickly, they have a cpaable bite, and they are uniquely agile and flexible. The primary downside is that without special training and mounting equipment they are next to impossible to ride. If you've ever tried to ride a bull spiraling into a cave you can barely fit in then you'll know what we mean",
         imageUrl:""
       },
 
       {
         creatureName: "Dreadlegs",
         creatureHome: "Shadowfeel",
-        creatureDetails:"The dreadlegs is a massive spider with ten eyes and ten legs from the shadowfeel realm - it feeds off of anxiety, fear, and unsurety. While it can be weakened by working to calm those nearby or involved, once one of these spawn it needs to be faced head on - paralytic bite and all. When a dreadlegs manifests it prefers to find dark corners that have enough height to keep it off the ground. Rather than attack head on, dreadlegs usually sit, watch, and wait continuing to feed on growing fear until it decides it is time to move on.",
+        creatureDetails:"The dreadlegs is a large spider with ten eyes and ten legs from the shadowfeel realm - it feeds off of anxiety, fear, and unsurety. While it can be weakened by working to calm those nearby or involved, once one of these spawn it needs to be faced head on - paralytic bite and all. When a dreadlegs manifests it prefers to find dark corners that are off the ground. Rather than attack head on, dreadlegs usually sit, watch, and wait continuing to feed on growing fear until it decides it is time to move on. Many dreadlegs have the ability to appear larger than they really are - but some really are that big. Watch out.",
         imageUrl:""
       },
 
