@@ -2,17 +2,19 @@
     --heading-font: "Berkshire Swash", serif;
     --paragraph-font: "Bellefair", serif;
 
-    --html-background-color: #BDE0FE;
-    --body-bg-color: #A2D2FF;
-    --general-text-color: #FFAFCC;
+    --html-background-color: #182401;
+    --general-text-color: #182401;
+    --body-bg-color: #AEC3B0CC;
 
-    --action-item-bg-color: #CDB4DB;
-    --action-text-color: #FFC8DD;
+    --highlighted-bg-color: #240b92a4;
   
     --special-content-bg-color: aliceblue;
+  
+    --action--item-bg-color: #4b1db8;
+    --action-text-color: #f8e008;
     
-    --nav-hover-background-color: #766381;
-    --nav-hover-link-color: #6e4655;
+    --nav-hover-background-color: #230b92;
+    --nav-hover-link-color: #ecb02d;
 }
 
 * {
@@ -21,12 +23,17 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--html-background-color);
+}
+
 body {
     padding: 2rem;
 
     font-family: var(--paragraph-font);
     font-weight: 400;
     font-style: normal;
+    font-size: large;
 
     background-color: var(--body-bg-color);
 }
@@ -99,7 +106,7 @@ footer {
 }
 
 .sizer {
-    min-width: 100%;
+    min-width: 100vw;
 }
 
 .special-content-box {
@@ -121,7 +128,7 @@ footer {
 
 .special-content-box nav ul {
     position: relative;
-    bottom: -5px;
+    top: -5px;
     left:-5px;
 }
 
@@ -133,7 +140,7 @@ footer {
     border-radius: 0px;
     border-style: solid;
     border-width:  2px;
-    border-bottom: none;
+    border-top: none;
     border-left: none;
     border-right: none;
 }
