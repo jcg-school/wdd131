@@ -130,13 +130,16 @@ footer {
     border-top: none;
     border-left: none;
     border-right: none;
-}
-
-.special-content-box nav ul {
     position: relative;
     top: -5px;
     left:-5px;
 }
+
+/*.special-content-box nav ul {
+    position: relative;
+    top: -5px;
+    left:-5px;
+}*/
 
 .special-content-box nav ul li {
     padding-right: 0;
