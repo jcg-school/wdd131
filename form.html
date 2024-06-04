@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jareth Gish WDD 131 - Form Project</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jareth Gish - Class Project">
+    <meta name="author" content="Jareth Gish">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <h1>Product Review</h1>
+            <form action="/submit_review" method="post">
+                <label for="product">Product Name</label>
+                <select id="product" name="product">
+                    <option value="">Choose a Product ...</option>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="product3">Product 3</option>
+                </select>
+                
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                </div>
+                
+                <label for="installation_date">Date of Installation</label>
+                <input type="date" id="installation_date" name="installation_date">
+                
+                <label>Which features did you find useful in the product? <span class="optional">(Check all that apply)</span></label>
+                <div class="features">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label><br>
+                    <input type="checkbox" id="ease_of_use" name="features" value="ease_of_use">
+                    <label for="ease_of_use">Ease of Use</label><br>
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label><br>
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                </div>
+                
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review" rows="5"></textarea>
+                
+                <label for="name">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="name" name="name">
+                
+                <input type="submit" class="submit-button" value="Post Review">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>, Jareth Gish, United States</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+
+</html>
