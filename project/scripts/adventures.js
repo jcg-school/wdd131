@@ -59,19 +59,19 @@ const creatureType = [
       creatureName: "Owl-fox",
       creatureHome: "Woodlands, Plains",
       creatureDetails: "The owl-fox is a creature well-known for its ability to move silently both through the air and on the ground. While a predator itself, these hard-to-catch creatures are often hunted for their pelts, which make surprisingly quiet clothes and armor.",
-      imageUrl: "images/owl-fox.jpg"
+      imageUrl: "images/owl-fox.webp"
     },
     {
         creatureName: "Korusk Clam",
         creatureHome: "Coasts",
         creatureDetails: "Korusk clams are massive clams of impressive strength and durability. Their clamshells prove to be effective, if heavy, breastplates and shields. And they are as good as any bear trap for any shoreline blunderers.",
-        imageUrl: "images/korusk-clam.jpg"
+        imageUrl: "images/korusk-clam.webp"
     },
     {
         creatureName: "Saddle-pede",
         creatureHome: "Underground",
         creatureDetails: "These centi-steeds are an ancient organism that thrive deep underground. These mounts can climb extremely quickly, they have a capable bite, and they are uniquely agile and flexible. The primary downside is that without special training and mounting equipment they are next to impossible to ride. If you've ever tried to ride a bull spiraling into a cave you can barely fit in then you'll know what we mean.",
-        imageUrl: "images/saddle-pede.jpg"
+        imageUrl: "images/saddle-pede.webp"
     },
     {
         creatureName: "Dreadlegs",
