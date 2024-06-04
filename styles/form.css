@@ -36,7 +36,7 @@ select, input[type="text"], input[type="date"], textarea {
     display: none;
 }*/
 .rating label {
-    font-size: 30px;
+    font-size: 12px;
     color: lightgray;
     cursor: pointer;
 }
