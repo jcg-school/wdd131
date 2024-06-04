@@ -23,16 +23,18 @@ label {
     font-weight: bold;
 }
 select, input[type="text"], input[type="date"], textarea {
-    width: 100%;
+    width: calc(100% - 22px);
+    max-width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
-.rating input {
+/*.rating input {
     display: none;
-}
+}*/
 .rating label {
     font-size: 30px;
     color: lightgray;
@@ -53,7 +55,8 @@ select, input[type="text"], input[type="date"], textarea {
     color: blue;
 }
 .submit-button {
-    width: 100%;
+    width: calc(100% - 22px);
+    max-width: 100%;
     padding: 10px;
     background-color: #000;
     color: #fff;
@@ -61,6 +64,7 @@ select, input[type="text"], input[type="date"], textarea {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    box-sizing: border-box;
 }
 .footer {
     text-align: center;
