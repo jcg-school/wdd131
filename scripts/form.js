@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelector('form').addEventListener('submit', function(event) {
     if (this.checkValidity()) {
-        event.preventDefault();
+        /*event.preventDefault();*/
         
         let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
         numReviews++
@@ -58,8 +58,9 @@ document.querySelector('form').addEventListener('submit', function(event) {
 
         document.querySelector(".posted-reviews").textContent = numReviews;
 
-        window.location.href = `review.html?numReviews=${numReviews}`;
+        /*window.location.href = `review.html?numReviews=${numReviews}`;*/
     }
 });
 
+let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
 document.querySelector(".posted-reviews").textContent = numReviews;
