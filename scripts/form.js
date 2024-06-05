@@ -48,19 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  function updateReviewCount() {
+    let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+    document.querySelector(".posted-reviews").textContent = numReviews;
+}
+
 document.querySelector('form').addEventListener('submit', function(event) {
     if (this.checkValidity()) {
-        /*event.preventDefault();*/
-        
         let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-        numReviews++
+        numReviews++;
         localStorage.setItem("numReviews-ls", numReviews);
-
-        document.querySelector(".posted-reviews").textContent = numReviews;
-
-        /*window.location.href = `review.html?numReviews=${numReviews}`;*/
+        updateReviewCount();
     }
 });
 
-let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-document.querySelector(".posted-reviews").textContent = numReviews;
+document.addEventListener('DOMContentLoaded', function() {
+    updateReviewCount();
+});
