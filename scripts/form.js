@@ -37,7 +37,6 @@ const products = [
     }
   ];
   
-  // Populate the Product Name options
   document.addEventListener('DOMContentLoaded', () => {
     const productSelect = document.getElementById('product');
     products.forEach(product => {
