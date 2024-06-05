@@ -37,7 +37,8 @@ const products = [
     }
   ];
   
-  document.addEventListener('DOMContentLoaded', () => {
+  // Populate the Product Name options
+document.addEventListener('DOMContentLoaded', () => {
     const productSelect = document.getElementById('product');
     products.forEach(product => {
       const option = document.createElement('option');
@@ -47,20 +48,18 @@ const products = [
     });
   });
 
-  document.querySelector('form').addEventListener('submit', function(event) {
+document.querySelector('form').addEventListener('submit', function(event) {
     if (this.checkValidity()) {
         event.preventDefault();
         
         let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-        localStorage.setItem("numReviews-ls", numReviews + 1);
+        numReviews++
+        localStorage.setItem("numReviews-ls", numReviews);
 
-        window.location.href = `review.html?numReviews=${numReviews + 1}`;
+        document.querySelector(".posted-reviews").textContent = numReviews;
+
+        window.location.href = `review.html?numReviews=${numReviews}`;
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const numReviews = parseInt(urlParams.get('numReviews')) || 0;
-
-    document.querySelector(".posted-reviews").textContent = numReviews;
-});
+document.querySelector(".posted-reviews").textContent = numReviews;
