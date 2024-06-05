@@ -47,6 +47,10 @@ body {
     border-color: var(--action-text-color);
 }
 
+a:visited {
+    color: var(--general-text-color);
+}
+
 .special-border-div {
     padding-top: 10px;
     padding-left: 1%;
@@ -207,6 +211,7 @@ footer {
     border-color: var(--html-background-color);
     border-radius: 5px;
     min-width: 100%;
+    margin-bottom: 20px;
 }
 
 .special-content-box nav {
