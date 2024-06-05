@@ -60,7 +60,7 @@ select, input[type="text"], input[type="date"], textarea {
     color: gold;
 }
 .features input {
-    margin-right: 2px;
+    margin-right: 5px;
 }
 .optional {
     font-size: 12px;
