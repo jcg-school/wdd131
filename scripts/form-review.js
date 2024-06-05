@@ -7,8 +7,4 @@ function updateReviewCount() {
     document.querySelector(".posted-reviews").textContent = numReviews;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    updateReviewCount();
-});
-
 updateReviewCount();
