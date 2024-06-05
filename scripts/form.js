@@ -47,12 +47,20 @@ const products = [
       productSelect.appendChild(option);
     });
   });
-  
-if (window.location.pathname === '/review.html') {
-    let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-  
-    numReviews++;
-    localStorage.setItem("numReviews-ls", numReviews);
-  
-    document.querySelector(".posted-reviews").textContent = numReviews;
-  }
+
+  document.querySelector('form').addEventListener('submit', function(event) {
+    // Perform form validation here
+    if (/* Your form validation conditions go here */) {
+        event.preventDefault();
+        
+        window.location.href = "/review.html";
+        if (window.location.pathname === '/review.html') {
+            let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+          
+            numReviews++;
+            localStorage.setItem("numReviews-ls", numReviews);
+          
+            document.querySelector(".posted-reviews").textContent = numReviews;
+          }
+    }
+});
