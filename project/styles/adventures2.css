@@ -88,6 +88,10 @@ nav ul {
     padding: 20px;
 }
 
+.padded ul {
+    padding: 20px;
+}
+
 th {
     font-weight: 400;
     text-align: end;
