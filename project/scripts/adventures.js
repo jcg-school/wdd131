@@ -110,12 +110,12 @@ function filterAndDisplayCreatures(filterFunction) {
 filterAndDisplayCreatures(() => true);
 
 document.querySelector('a[title="all"]').addEventListener('click', event => {
-    
+    event.preventDefault();
     filterAndDisplayCreatures(() => true);
 });
 
 document.querySelector('a[title="woodlands"]').addEventListener('click', event => {
-    
+    event.preventDefault();
     filterAndDisplayCreatures(creature => {
         const habitats = creature.creatureHome.split(',').map(habitat => habitat.trim());
         return habitats.includes('Woodlands');
@@ -123,7 +123,7 @@ document.querySelector('a[title="woodlands"]').addEventListener('click', event =
 });
 
 document.querySelector('a[title="plains"]').addEventListener('click', event => {
-    
+    event.preventDefault();
     filterAndDisplayCreatures(creature => {
         const habitats = creature.creatureHome.split(',').map(habitat => habitat.trim());
         return habitats.includes('Plains');
@@ -131,7 +131,7 @@ document.querySelector('a[title="plains"]').addEventListener('click', event => {
 });
 
 document.querySelector('a[title="coastal"]').addEventListener('click', event => {
-    
+    event.preventDefault();
     filterAndDisplayCreatures(creature => {
         const habitats = creature.creatureHome.split(',').map(habitat => habitat.trim());
         return habitats.includes('Coasts');
@@ -139,7 +139,7 @@ document.querySelector('a[title="coastal"]').addEventListener('click', event => 
 });
 
 document.querySelector('a[title="underground"]').addEventListener('click', event => {
-    
+    event.preventDefault();
     filterAndDisplayCreatures(creature => {
         const habitats = creature.creatureHome.split(',').map(habitat => habitat.trim());
         return habitats.includes('Underground');
@@ -147,7 +147,7 @@ document.querySelector('a[title="underground"]').addEventListener('click', event
 });
 
 document.querySelector('a[title="shadowfeel-habitat"]').addEventListener('click', event => {
-    
+    event.preventDefault();
     filterAndDisplayCreatures(creature => {
         const habitats = creature.creatureHome.split(',').map(habitat => habitat.trim());
         return habitats.includes('Shadowfeel');
