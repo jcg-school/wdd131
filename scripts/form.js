@@ -1,4 +1,4 @@
-// footer code
+
 const currentYearElementSelector = document.getElementById('currentyear');
 const currentYearVariable = new Date().getFullYear();
 currentYearElementSelector.innerHTML = currentYearVariable;
@@ -8,7 +8,6 @@ const lastModifiedDate = new Date(document.lastModified);
 const formattedLastModifiedDate = `${lastModifiedDate.toLocaleDateString()} ${lastModifiedDate.toLocaleTimeString()}`;
 lastModifiedDateElementSelector.textContent = formattedLastModifiedDate;
 
-// Product Array
 const products = [
     {
       id: 'fc-1888',
@@ -37,7 +36,6 @@ const products = [
     }
   ];
   
-  // Populate the Product Name options
 document.addEventListener('DOMContentLoaded', () => {
     const productSelect = document.getElementById('product');
     products.forEach(product => {
@@ -49,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  function updateReviewCount() {
+function updateReviewCount() {
     let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
     document.querySelector(".posted-reviews").textContent = numReviews;
 }
