@@ -20,12 +20,13 @@ const citySanctuary = document.querySelector('#sanctuary');
 const shadoworest = document.querySelector('#shadowfeel');
 
 function handleClick(event) {
-    event.preventDefault();
+    
 
     if (event.currentTarget.getAttribute('title') === 'hylandia' ||
         event.currentTarget.getAttribute('title') === 'sanctuary' ||
         event.currentTarget.getAttribute('title') === 'shadowfeel') {
 
+        event.preventDefault();
         const targetId = event.currentTarget.getAttribute('title');
 
         theRealm.classList.remove('show-details', 'hide-details');
@@ -153,3 +154,39 @@ document.querySelector('a[title="shadowfeel-habitat"]').addEventListener('click'
         return habitats.includes('Shadowfeel');
     });
 });
+
+
+// dice tray functionality
+const diceElements = document.querySelectorAll('.dice');
+const rollCountElement = document.getElementById('roll-count');
+const rollTotalElement = document.getElementById('roll-total');
+const rollInput = document.getElementById('roll-input');
+const rollBtn = document.getElementById('roll-btn');
+      
+// Check localStorage for roll count
+let rollCount = localStorage.getItem('rollCount') || 0;
+rollCountElement.textContent = rollCount;
+  
+// Function to roll the dice
+function rollDice() {
+    let rollTotal = 0;
+  
+    diceElements.forEach(diceElement => {
+        const randomNumber = Math.floor(Math.random() * 10) + 1; // Generates a random number between 1 and 10
+        diceElement.textContent = randomNumber;
+        rollTotal += randomNumber;
+    });
+  
+    // Calculate roll total including user input
+    const userInput = parseInt(rollInput.value) || 0;
+    rollTotal += userInput;
+    rollTotalElement.textContent = rollTotal;
+  
+    // Update roll count and store it in localStorage
+    rollCount++;
+    rollCountElement.textContent = rollCount;
+    localStorage.setItem('rollCount', rollCount);
+}
+      
+// Event listener for the roll button
+rollBtn.addEventListener('click', rollDice);

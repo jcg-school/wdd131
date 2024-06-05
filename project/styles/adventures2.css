@@ -35,6 +35,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: large;
+    color: var(--general-text-color);
 
     background-color: var(--body-bg-color);
 
@@ -50,6 +51,7 @@ body {
     padding-top: 10px;
     padding-left: 1%;
     padding-right: 1%;
+    padding-bottom: 10px;
 
     border-radius: 1px;
     border-style: solid;
@@ -82,8 +84,32 @@ nav ul {
     flex-wrap: wrap;
 }
 
+.padded {
+    padding: 20px;
+}
+
+.padded ul {
+    padding: 30px;
+}
+
+.flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table tr {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+th {
+    font-weight: 400;
+    text-align: end;
+}
+
 nav ul li {
     display: inline;
+    min-width: 100%;
 }
 
 nav ul li a {
@@ -97,12 +123,25 @@ nav ul li a {
     padding: 10px 20px;
     color:var(--action-text-color);
     border-radius: 5px;
+    min-width: 100%;
 }
 
 nav ul li a:hover {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
 } 
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: var(--general-text-color);
+}
+
+.intro-div {
+    text-align: center;
+}
 
 h1, h2, h3 {
     font-family:  var(--heading-font);
@@ -266,6 +305,36 @@ footer {
     margin-bottom: 10px;
   }
 
+  /*dice tray styling*/
+
+  .dice-tray {
+    text-align: center;
+  }
+  
+  .dice {
+    font-size: 5rem; /* Larger font size */
+    display: inline-block;
+    margin: 0 10px; /* Add some spacing between the dice */
+  }
+  
+  #roll-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #roll-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+
 @media (min-width: 64rem) {
 
     body {
@@ -286,6 +355,14 @@ footer {
     .nav-menu li {
         margin: 0.5rem;
         background-color: var(--action-item-bg-color);
+    }
+
+    nav ul li {
+        min-width: 1%;
+    }
+    
+    nav ul li a {
+        min-width: 1%;
     }
 
     .creature-card {
