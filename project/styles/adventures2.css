@@ -4,7 +4,7 @@
 
     --html-background-color: #182401;
     --general-text-color: #182401;
-    --body-bg-color: #AEC3B0CC;
+    --body-bg-color: #cce0cecc;
 
     --highlighted-bg-color: #240b92a4;
   
@@ -45,6 +45,10 @@ body {
     border-top: none;
     border-bottom: none;
     border-color: var(--action-text-color);
+}
+
+#attributions {
+    color: var(--general-text-color);
 }
 
 #attributions:visited {
@@ -144,7 +148,6 @@ th {
 
 nav ul li {
     display: inline;
-    min-width: 100%;
 }
 
 nav ul li a {
