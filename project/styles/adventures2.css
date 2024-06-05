@@ -85,6 +85,7 @@ nav ul {
 
 nav ul li {
     display: inline;
+    min-width: 100%;
 }
 
 nav ul li a {
@@ -98,6 +99,7 @@ nav ul li a {
     padding: 10px 20px;
     color:var(--action-text-color);
     border-radius: 5px;
+    min-width: 100%;
 }
 
 nav ul li a:hover {
