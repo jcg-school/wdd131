@@ -52,15 +52,16 @@ const products = [
     if (this.checkValidity()) {
         event.preventDefault();
         
-        /*window.location.href = "review.html";*/
-        window.open("review.html", "_blank"); //open in a new tab instead
-        if (window.location.pathname === 'review.html') {
-            let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-          
-            numReviews++;
-            localStorage.setItem("numReviews-ls", numReviews);
-          
-            document.querySelector(".posted-reviews").textContent = numReviews;
-          }
+        let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+        localStorage.setItem("numReviews-ls", numReviews + 1);
+
+        window.location.href = `review.html?numReviews=${numReviews + 1}`;
     }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const numReviews = parseInt(urlParams.get('numReviews')) || 0;
+
+    document.querySelector(".posted-reviews").textContent = numReviews;
 });
