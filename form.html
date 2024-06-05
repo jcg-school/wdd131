@@ -21,7 +21,7 @@
             <form action="/review.html" method="get">
                 <label for="product">Product Name<span class="required">*</span></label>
                 <select id="product" name="product" required>
-                    <option value="">Choose a Product ...</option>
+                    <option value="" disabled selected>Choose a Product ...</option>
                     <div id="dynamic-products">
                         <option value="product1">Product 1</option>
                         <option value="product2">Product 2</option>
@@ -29,32 +29,32 @@
                     </div>
                 </select>
                 
-                <label>Overall Rating</label>
+                <label>Overall Rating<span class="required">*</span></label>
                 <div class="rating">
                     <div>
-                        <input type="radio" id="star1" name="rating" value="1">
+                        <input type="radio" id="star1" name="rating" value="1" required>
                         <label for="star1">&#9733;</label>
                     </div>
                     <div>
-                        <input type="radio" id="star2" name="rating" value="2">
+                        <input type="radio" id="star2" name="rating" value="2" required>
                     <label for="star2">&#9733;&#9733;</label>
                     </div>
                     <div>
-                        <input type="radio" id="star3" name="rating" value="3">
+                        <input type="radio" id="star3" name="rating" value="3" required>
                         <label for="star3">&#9733;&#9733;&#9733;</label>
                     </div>
                     <div>
-                        <input type="radio" id="star4" name="rating" value="4">
+                        <input type="radio" id="star4" name="rating" value="4" required>
                         <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
                     </div>
                     <div>
-                        <input type="radio" id="star5" name="rating" value="5">
+                        <input type="radio" id="star5" name="rating" value="5" required>
                     <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
                     </div>
                 </div>
                 
-                <label for="installation_date">Date of Installation</label>
-                <input type="date" id="installation_date" name="installation_date">
+                <label for="installation_date">Date of Installation<span class="required">*</span></label>
+                <input type="date" id="installation_date" name="installation_date" required>
                 
                 <label>Which features did you find useful in the product? <span class="optional">(Check all that apply)</span></label>
                 <div class="features">
