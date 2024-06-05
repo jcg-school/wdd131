@@ -49,8 +49,7 @@ const products = [
   });
 
   document.querySelector('form').addEventListener('submit', function(event) {
-    // Perform form validation here
-    if (/* Your form validation conditions go here */) {
+    if (this.checkValidity()) {
         event.preventDefault();
         
         window.location.href = "/review.html";
