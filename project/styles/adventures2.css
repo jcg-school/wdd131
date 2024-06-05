@@ -4,14 +4,14 @@
 
     --html-background-color: #182401;
     --general-text-color: #182401;
-    --body-bg-color: #f5f5f5;
+    --body-bg-color: #AEC3B0CC;
 
     --highlighted-bg-color: #240b92a4;
   
-    --special-content-bg-color: #ffffff;
+    --special-content-bg-color: aliceblue;
   
     --action-item-bg-color: #4b1db8;
-    --action-text-color: #FFD700;
+    --action-text-color: #FFD700; /*previously #f8e008;*/
     
     --nav-hover-background-color: #230b92;
     --nav-hover-link-color: #ecb02d;
@@ -25,30 +25,46 @@
 
 html {
     background-color: var(--html-background-color);
-    color: var(--general-text-color);
-    font-size: 16px;
 }
 
 body {
-    margin: 0 auto;
-    padding: 1rem;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+
     font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+
     background-color: var(--body-bg-color);
+
     border-radius: 1px;
-    border: 3px solid var(--action-text-color);
+    border-style: solid;
+    border-width:  3px;
+    border-top: none;
+    border-bottom: none;
+    border-color: var(--action-text-color);
 }
 
 .special-border-div {
-    padding: 1rem;
+    padding-top: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+
     border-radius: 1px;
-    border: 3px solid var(--action-item-bg-color);
+    border-style: solid;
+    border-width:  3px;
+    border-top: none;
+    border-bottom: none;
+    border-color: var(--action-item-bg-color);
 }
 
 .header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding-top: 3px;
+    padding-bottom: 1rem;
 }
 
 nav {
@@ -67,18 +83,19 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0.5rem;
+    display: inline;
 }
 
 nav ul li a {
-    font-size: 1rem;
+    font-size: large;
+    /*make like a button*/
     text-decoration: none;
     cursor: pointer;
     text-align: center;
     display: inline-block;
     background-color: var(--action-item-bg-color);
     padding: 10px 20px;
-    color: var(--action-text-color);
+    color:var(--action-text-color);
     border-radius: 5px;
 }
 
@@ -88,79 +105,201 @@ nav ul li a:hover {
 } 
 
 h1, h2, h3 {
-    font-family: var(--heading-font);
+    font-family:  var(--heading-font);
     font-weight: 400;
-    margin: 1rem 0;
-}
+    font-style: normal;
+    margin-left: 3px;
+  }
 
-p {
-    padding: 0.5rem 0;
-}
+ p {
+    padding: 0.5rem;
+  }
 
-img {
+ img {
     margin-bottom: 0.5rem;
     width: 100%;
     height: auto;
-}
+ }
 
 footer {
     text-align: center;
-    padding: 1rem 0;
 }
 
 .sizer {
-    width: 100%;
-    margin-bottom: 1.5rem;
+    min-width: 100%;
 }
 
 .special-content-box {
-    margin-top: 1rem;
+    margin-top: 3px;
     background-color: var(--special-content-bg-color);
-    border: 3px solid var(--action-item-bg-color);
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--html-background-color);
+    border-radius: 5px;
+    min-width: 100%;
+}
+
+.special-content-box nav {
+    justify-content: start;
+    text-align: left;
+    width: 100%;
+    background-color: var(--action-item-bg-color);
+
     border-radius: 1px;
-    padding: 1rem;
+    border-style: solid;
+    border-width:  2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: var(--action-text-color);
+}
+
+.special-content-box nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.special-content-box nav ul li {
+    padding-right: 0;
 }
 
 .hide-details {
     display: none;
 }
 
+.show-details {
+    display: block;
+}
+
+.spacer {
+    margin-top: 5%;
+}
+
 #mobile-menu {
+    text-decoration: none;
+    text-align: right;
+
+    border-style: solid;
+    border-width:  2px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: var(--action-text-color);
+}
+
+.nav-menu {
     display: none;
-    background: var(--action-item-bg-color);
-    border: 1px solid var(--action-text-color);
-    color: var(--action-text-color);
-    font-size: 1rem;
+}
+
+#mobile-menu::before {
+    content: "≡";
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color:var(--action-text-color);
+    background-color: var(--action-item-bg-color);
     border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
 }
 
-@media only screen and (min-width: 64rem) {
-    nav ul li a {
-        margin-left: 0.25rem;
-    }
+.header-flex nav {
+    color:var(--action-text-color);
+    background-color: var(--action-item-bg-color);
+    border-radius: 5px;
 }
 
-@media only screen and (max-width: 64rem) {
-    nav {
-        display: none;
-        width: 100%;
-    }
-    
-    .header-flex {
-        flex-wrap: wrap;
-    }
+.show {
+    display: flex;
+    flex-direction: column;
+}
 
-    .header-flex > nav {
-        display: block;
-    }
+#mobile-menu.show::before {
+    content: "X";
+}
 
+.creature-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .creature-card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .creature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+  
+  .creature-card h3,
+  .creature-card p {
+    position: relative;
+    z-index: 2; 
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .creature-card h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  
+  .creature-card p {
+    font-size: 0.85em;
+    margin-bottom: 10px;
+  }
+
+@media (min-width: 64rem) {
+
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     #mobile-menu {
+        display: none;
+    }
+    .nav-menu {
         display: block;
     }
 
-    #mobile-menu.show-nav + nav {
-        display: flex;
+    .header-flex nav {
+        background: rgba(0, 0, 0, 0);
     }
+
+    .nav-menu li {
+        margin: 0.5rem;
+        background-color: var(--action-item-bg-color);
+    }
+
+    .creature-card {
+        flex-basis: calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px); 
+        padding: 0;
+      }
+    
+    .creature-card h3 {
+        font-size: 1.5em;
+        margin-top: 20px;
+      }
+    
+    .creature-card p {
+        font-size: 1em;
+      }
 }
