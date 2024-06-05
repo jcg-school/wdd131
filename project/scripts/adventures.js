@@ -158,9 +158,6 @@ document.querySelector('a[title="shadowfeel-habitat"]').addEventListener('click'
 
 // dice tray functionality
 
-
-
-
 const diceElements = document.querySelectorAll('.dice');
 const rollCountElement = document.getElementById('roll-count');
 const rollTotalElement = document.getElementById('roll-total');
@@ -168,12 +165,11 @@ const rollInput = document.getElementById('roll-input');
 const rollBtn = document.getElementById('roll-btn');
       
 // Check localStorage for roll count
-document.addEventListener('DOMContentLoaded', (event) => {
-    if (!localStorage.getItem('rollCount')) {
-        localStorage.setItem('rollCount', 0);
-    }
-    document.getElementById('rollCount').innerText = `Total Rolls: ${localStorage.getItem('rollCount')}`;
-});
+if (!localStorage.getItem('rollCount')) {
+    localStorage.setItem('rollCount', 0);
+}
+
+document.getElementById('rollCount').innerText = `Total Rolls: ${localStorage.getItem('rollCount')}`;
 
 document.getElementById('diceForm').addEventListener('submit', function(event) {
     event.preventDefault();
