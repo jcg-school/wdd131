@@ -92,8 +92,10 @@ nav ul {
     padding: 30px;
 }
 
-.special-content-box table {
-    align-content: center;
+.flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 table tr {
