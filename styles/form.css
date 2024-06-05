@@ -23,7 +23,6 @@ label {
     font-weight: bold;
 }
 .required {
-    content: "*";
     color: red;
     font-size: 12px;
 }
