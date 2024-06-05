@@ -157,6 +157,10 @@ document.querySelector('a[title="shadowfeel-habitat"]').addEventListener('click'
 
 
 // dice tray functionality
+
+
+
+
 const diceElements = document.querySelectorAll('.dice');
 const rollCountElement = document.getElementById('roll-count');
 const rollTotalElement = document.getElementById('roll-total');
@@ -164,29 +168,33 @@ const rollInput = document.getElementById('roll-input');
 const rollBtn = document.getElementById('roll-btn');
       
 // Check localStorage for roll count
-let rollCount = localStorage.getItem('rollCount') || 0;
-rollCountElement.textContent = rollCount;
-  
-// Function to roll the dice
-function rollDice() {
-    let rollTotal = 0;
-  
-    diceElements.forEach(diceElement => {
-        const randomNumber = Math.floor(Math.random() * 10) + 1; // Generates a random number between 1 and 10
-        diceElement.textContent = randomNumber;
-        rollTotal += randomNumber;
-    });
-  
-    // Calculate roll total including user input
-    const userInput = parseInt(rollInput.value) || 0;
-    rollTotal += userInput;
-    rollTotalElement.textContent = rollTotal;
-  
-    // Update roll count and store it in localStorage
-    rollCount++;
-    rollCountElement.textContent = rollCount;
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (!localStorage.getItem('rollCount')) {
+        localStorage.setItem('rollCount', 0);
+    }
+    document.getElementById('rollCount').innerText = `Total Rolls: ${localStorage.getItem('rollCount')}`;
+});
+
+document.getElementById('diceForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let statBonus = parseInt(document.getElementById('statBonus').value);
+    let roll1 = Math.floor(Math.random() * 10) + 1;
+    let roll2 = Math.floor(Math.random() * 10) + 1;
+    let rollTotal = roll1 + roll2 + statBonus;
+    let resultMessage = '';
+
+    if (rollTotal <= 11) {
+        resultMessage = `Roll: ${roll1} + ${roll2} + ${statBonus} = ${rollTotal} (Failure)`;
+    } else if (rollTotal <= 16) {
+        resultMessage = `Roll: ${roll1} + ${roll2} + ${statBonus} = ${rollTotal} (Success)`;
+    } else {
+        resultMessage = `Roll: ${roll1} + ${roll2} + ${statBonus} = ${rollTotal} (Perfect Success)`;
+    }
+
+    document.getElementById('result').innerText = `${resultMessage}`;
+
+    let rollCount = parseInt(localStorage.getItem('rollCount')) + 1;
     localStorage.setItem('rollCount', rollCount);
-}
-      
-// Event listener for the roll button
-rollBtn.addEventListener('click', rollDice);
+    document.getElementById('rollCount').innerText = `Total Rolls: ${rollCount}`;
+});
+
