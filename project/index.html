@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Jareth Gish - Week 05 Project Site Plan Title</title>
+    <title>PairODice Adventures - Hylandia</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jareth Gish - Class Project">
     <meta name="author" content="Jareth Gish">
     <link rel="stylesheet" href="styles/adventures2.css">
@@ -15,46 +15,45 @@
     <script src="scripts/adventures.js" defer></script>
 </head>
 <body>
-        <header>
-            <div class="special-border-div">
-                <div class="header-flex">
-                    <h1>PairODice Adventures</h1>
-                    <div>
-                        <a href="#" id="mobile-menu" href="#"></a>
-                        <nav>
-                            <ul class="nav-menu">
-                                <li><a href="#" title="rules">Design Principles</a></li>
-                                <li><a href="#" title="contact">Contact <i>GishRoleplaying!</i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-    
-                <div>
-                    <p><i>GishRoleplaying!</i> welcomes you to a PairODice Adventures setting - Hylandia! In this family oriented table-top role-playing game you will play through fantastic journeys where every hardship is opportunity - and every play through is experience practicing valuable real life skills!</p>
-                </div>
+    <header>
+        <div class="special-border-div">
+            <div class="header-flex">
+                <h1>PairODice Adventures</h1>
+                <button id="mobile-menu"></button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#design-principles" title="Design Principles">Design Principles</a></li>
+                        <li><a href="#contact" title="Contact GishRoleplaying!">Contact <i>GishRoleplaying!</i></a></li>
+                    </ul>
+                </nav>
             </div>
-        </header>
-    
-        <main>
-            <div class="special-border-div">
+            <div>
+                <p><i>GishRoleplaying!</i> welcomes you to a PairODice Adventures setting - Hylandia! In this family-oriented table-top role-playing game, you will play through fantastic journeys where every hardship is an opportunity - and every playthrough is an experience practicing valuable real-life skills!</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="special-border-div">
+            <section>
                 <div class="sizer">
                     <h2>About Hylandia</h2>
                     <div class="special-content-box">
                         <nav>
                             <ul>
-                                <li><a href="#" title="hylandia">The Realm of Hylandia</a></li>
-                                <li><a href="#" title="sanctuary">The City Sanctuary</a></li>
-                                <li><a href="#" title="shadowfeel">The Shadowfeel Forest</a></li>
+                                <li><a href="#hylandia" title="Hylandia">The Realm of Hylandia</a></li>
+                                <li><a href="#sanctuary" title="Sanctuary">The City Sanctuary</a></li>
+                                <li><a href="#shadowfeel" title="Shadowfeel">The Shadowfeel Forest</a></li>
                             </ul>
                         </nav>
-                        <p class="show-details" id="hylandia">Hylandia is a medieval fantasy roleplaying world. Here you and your children will deal with characters and locations that require math, investigative, and social skills - and a good deal of curiosity. Hylandian adventures start from the great city of Sanctuary, a bastion of light lead by a paradisiacal society who focuses on building up those who will come after. The terrains of hylandia include valleys, mountains, grasslands, coasts, mystical locations, and underground delving opportunities.</p>
-                        <p class="hide-details" id="sanctuary">The City Sanctuary is the home base for our young adventurers - while many may have traveled to arrive here it is famed for it's academy, it's desire to enable bright futures for it's youth, and more. It houses several overarching factions - The Governors, the nurturers, the prophets, the people, the commandos, and the academy.</p>
-                        <p class="hide-details" id="shadowfeel">Shadowfeel Forest is a mystical shadow realm where the negative habits, thought-patterns, and emotions of the living gather until they begin to gain form and power. Eventually creatures from across the shadow-veil gain the strength to enter the realm of the living. The purpose of the shadowfeel is to personify negativity so that we can learn to identify and account for how difficulty often affects us and others. You and your children will practice self-management, as well as uplifting others.</p>
-                        
+                        <p class="show-details" id="hylandia">Hylandia is a medieval fantasy roleplaying world. Here you and your children will deal with characters and locations that require math, investigative, and social skills - and a good deal of curiosity. Hylandian adventures start from the great city of Sanctuary, a bastion of light lead by a paradisiacal society who focuses on building up those who will come after. The terrains of Hylandia include valleys, mountains, grasslands, coasts, mystical locations, and underground delving opportunities.</p>
+                        <p class="hide-details" id="sanctuary">The City Sanctuary is the home base for our young adventurers - while many may have traveled to arrive here it is famed for its academy, its desire to enable bright futures for its youth, and more. It houses several overarching factions - The Governors, the nurturers, the prophets, the people, the commandos, and the academy.</p>
+                        <p class="hide-details" id="shadowfeel">Shadowfeel Forest is a mystical shadow realm where the negative habits, thought-patterns, and emotions of the living gather until they begin to gain form and power. Eventually, creatures from across the shadow-veil gain the strength to enter the realm of the living. The purpose of the shadowfeel is to personify negativity so that we can learn to identify and account for how difficulty often affects us and others. You and your children will practice self-management, as well as uplifting others.</p>
                     </div>
                 </div>
-    
+            </section>
+
+            <section>
                 <div class="sizer">
                     <h2 class="spacer">Monsters & Beasties</h2>
                     <p>Hylandia is full of unique creatures of all sorts! From the stealthy hunter owlfox, the incredible and dizzying centi-mount, the giant korusk clams, or the unique and terrifying shadowfeel monsters.</p>
@@ -72,19 +71,18 @@
                         <div class="creature-card-container" id="creature-cards-container">
                             <p>Click any filter option to see some of the creatures of Hylandia!</p>
                         </div>
-                        
                     </div>
                 </div>
-            </div>
-        </main>
-    
-        <footer>
-            <div class="special-border-div">
-                <p>&copy; <span id="currentyear"></span>, Jareth Gish, United States</p>
-                <p>Last Modified: <span id="lastmodified"></span></p>
-                <a href="#" href="#">Attributions</a>
-            </div>
-        </footer>
-<!--https://jcg-school.github.io/wdd131/project/index.html-->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="special-border-div">
+            <p>&copy; <span id="currentyear"></span>, Jareth Gish, United States</p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+            <a href="#" title="Attributions">Attributions</a>
+        </div>
+    </footer>
 </body>
 </html>
