@@ -112,6 +112,10 @@ h1 a:visited {
     color: var(--general-text-color);
 }
 
+.intro-div {
+    text-align: center;
+}
+
 h1, h2, h3 {
     font-family:  var(--heading-font);
     font-weight: 400;
