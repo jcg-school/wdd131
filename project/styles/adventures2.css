@@ -47,7 +47,7 @@ body {
     border-color: var(--action-text-color);
 }
 
-a:visited {
+#attributions:visited {
     color: var(--general-text-color);
 }
 
