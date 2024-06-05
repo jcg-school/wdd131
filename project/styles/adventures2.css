@@ -84,6 +84,15 @@ nav ul {
     flex-wrap: wrap;
 }
 
+.padded {
+    padding: 20px;
+}
+
+th {
+    font-weight: 400;
+    text-align: end;
+}
+
 nav ul li {
     display: inline;
     min-width: 100%;
