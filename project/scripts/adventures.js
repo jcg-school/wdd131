@@ -26,6 +26,7 @@ function handleClick(event) {
         event.currentTarget.getAttribute('title') === 'sanctuary' ||
         event.currentTarget.getAttribute('title') === 'shadowfeel') {
 
+        event.preventDefault();
         const targetId = event.currentTarget.getAttribute('title');
 
         theRealm.classList.remove('show-details', 'hide-details');
