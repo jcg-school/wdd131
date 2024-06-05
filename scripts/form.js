@@ -52,8 +52,8 @@ const products = [
     if (this.checkValidity()) {
         event.preventDefault();
         
-        window.location.href = "/review.html";
-        if (window.location.pathname === '/review.html') {
+        window.location.href = "review.html";
+        if (window.location.pathname === 'review.html') {
             let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
           
             numReviews++;
