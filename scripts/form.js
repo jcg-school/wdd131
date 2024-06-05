@@ -52,7 +52,8 @@ const products = [
     if (this.checkValidity()) {
         event.preventDefault();
         
-        window.location.href = "review.html";
+        /*window.location.href = "review.html";*/
+        window.open("review.html", "_blank"); //open in a new tab instead
         if (window.location.pathname === 'review.html') {
             let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
           
