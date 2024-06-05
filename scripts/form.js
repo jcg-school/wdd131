@@ -48,17 +48,11 @@ const products = [
     });
   });
   
-  // Increment the review counter on the review.html page
-  if (window.location.pathname === '/review.html') {
-    if (localStorage.getItem('reviewCount') === null) {
-      localStorage.setItem('reviewCount', 0);
-    }
-    let reviewCount = parseInt(localStorage.getItem('reviewCount'));
-    reviewCount += 1;
-    localStorage.setItem('reviewCount', reviewCount);
+if (window.location.pathname === '/review.html') {
+    let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
   
-    // Display the review count (optional)
-    const reviewCountElement = document.createElement('p');
-    reviewCountElement.textContent = `Number of reviews submitted: ${reviewCount}`;
-    document.body.appendChild(reviewCountElement);
+    numReviews++;
+    localStorage.setItem("numReviews-ls", numReviews);
+  
+    document.querySelector(".posted-reviews").textContent = numReviews;
   }
