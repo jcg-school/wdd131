@@ -104,6 +104,10 @@ nav ul li a:hover {
     color: var(--nav-hover-link-color);
 } 
 
+h1 a {
+    text-decoration: none;
+}
+
 h1, h2, h3 {
     font-family:  var(--heading-font);
     font-weight: 400;
