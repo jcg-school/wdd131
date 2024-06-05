@@ -89,9 +89,17 @@ nav ul {
 }
 
 .padded ul {
-    padding: 20px;
+    padding: 30px;
 }
 
+.special-content-box table {
+    align-content: center;
+}
+
+table tr {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
 th {
     font-weight: 400;
     text-align: end;
