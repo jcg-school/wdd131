@@ -158,41 +158,38 @@ document.querySelector('a[title="shadowfeel-habitat"]').addEventListener('click'
 
 // dice tray functionality
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Check if the current URL matches the desired URL
-    if (window.location.href === "your_desired_url_here") {
-      const diceElements = document.querySelectorAll('.dice');
-      const rollCountElement = document.getElementById('roll-count');
-      const rollTotalElement = document.getElementById('roll-total');
-      const rollInput = document.getElementById('roll-input');
-      const rollBtn = document.getElementById('roll-btn');
+if (window.location.href === "dicetray.html") {
+    const diceElements = document.querySelectorAll('.dice');
+    const rollCountElement = document.getElementById('roll-count');
+    const rollTotalElement = document.getElementById('roll-total');
+    const rollInput = document.getElementById('roll-input');
+    const rollBtn = document.getElementById('roll-btn');
       
-      // Check localStorage for roll count
-      let rollCount = localStorage.getItem('rollCount') || 0;
-      rollCountElement.textContent = rollCount;
+    // Check localStorage for roll count
+    let rollCount = localStorage.getItem('rollCount') || 0;
+    rollCountElement.textContent = rollCount;
   
-      // Function to roll the dice
-      function rollDice() {
-        let rollTotal = 0;
+    // Function to roll the dice
+function rollDice() {
+    let rollTotal = 0;
   
-        diceElements.forEach(diceElement => {
-          const randomNumber = Math.floor(Math.random() * 10) + 1; // Generates a random number between 1 and 10
-          diceElement.textContent = randomNumber;
-          rollTotal += randomNumber;
-        });
+    diceElements.forEach(diceElement => {
+        const randomNumber = Math.floor(Math.random() * 10) + 1; // Generates a random number between 1 and 10
+        diceElement.textContent = randomNumber;
+        rollTotal += randomNumber;
+    });
   
-        // Calculate roll total including user input
-        const userInput = parseInt(rollInput.value) || 0;
-        rollTotal += userInput;
-        rollTotalElement.textContent = rollTotal;
+    // Calculate roll total including user input
+    const userInput = parseInt(rollInput.value) || 0;
+    rollTotal += userInput;
+    rollTotalElement.textContent = rollTotal;
   
-        // Update roll count and store it in localStorage
-        rollCount++;
-        rollCountElement.textContent = rollCount;
-        localStorage.setItem('rollCount', rollCount);
-      }
+    // Update roll count and store it in localStorage
+    rollCount++;
+    rollCountElement.textContent = rollCount;
+    localStorage.setItem('rollCount', rollCount);
+}
       
-      // Event listener for the roll button
-      rollBtn.addEventListener('click', rollDice);
+    // Event listener for the roll button
+    rollBtn.addEventListener('click', rollDice);
     }
-  });
