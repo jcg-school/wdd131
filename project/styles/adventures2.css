@@ -327,6 +327,16 @@ footer {
         background-color: var(--action-item-bg-color);
     }
 
+    nav ul li {
+        min-width: 1%;
+    }
+    
+    nav ul li a {
+        min-width: 1%;
+    }
+
+
+
     .creature-card {
         flex-basis: calc(33.33% - 10px);
         max-width: calc(33.33% - 10px); 
