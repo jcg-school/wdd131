@@ -36,11 +36,13 @@
     </header>
     <main>
         <div class="special-border-div">
-            <div class="special-content-box">
-                <form id="diceForm">
-                    <label for="statBonus">Stat Bonus (-10 to 10): </label>
-                    <input type="number" id="statBonus" class="stat-input" min="-10" max="10" value="0" required>
-                    <button type="submit">Roll 2d10 + Stats!</button>
+            <div class="special-content-box column-flexy">
+                <form id="diceForm" class="column-flexy">
+                    <div>
+                        <label for="statBonus">Stat Bonus (-10 to 10): </label>
+                        <input type="number" id="statBonus" name ="statBonus" class="stat-input" min="-10" max="10" value="0" required>
+                    </div>
+                    <button type="submit" id="submit" name="submit">Roll 2d10 + Stats!</button>
                 </form>
                 <div class="result" id="result"></div>
                 <div class="roll-count" id="rollCount"></div>

@@ -98,6 +98,37 @@ nav ul {
     align-items: center;
 }
 
+.column-flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.column-flexy button {
+    margin-top: 20px;
+    background-color: var(--action-item-bg-color);
+    color: var(--action-text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px
+}
+
+form {
+    padding: 20px;
+}
+
+#rollCount {
+    padding-bottom: 20px
+}
+
+.column-flexy button:hover:active {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
 table tr {
     padding-top: 3px;
     padding-bottom: 3px;
