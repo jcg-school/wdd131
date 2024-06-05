@@ -36,7 +36,16 @@
     </header>
     <main>
         <div class="special-border-div">
-            
+            <div class="dice-tray">
+                <h2>Digital Dice Tray</h2>
+                <div class="dice" id="dice1"></div>
+                <div class="dice" id="dice2"></div>
+                <label for="roll-input">User Input (-10 to 10):</label>
+                <input type="number" id="roll-input" min="-10" max="10" step="1">
+                <button id="roll-btn">Roll Dice</button>
+                <p>Roll count: <span id="roll-count">0</span></p>
+                <p>Roll total: <span id="roll-total">0</span></p>
+              </div>
         </div>
     </main>
     <footer>

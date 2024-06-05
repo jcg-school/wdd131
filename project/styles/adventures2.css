@@ -305,6 +305,36 @@ footer {
     margin-bottom: 10px;
   }
 
+  /*dice tray styling*/
+
+  .dice-tray {
+    text-align: center;
+  }
+  
+  .dice {
+    font-size: 5rem; /* Larger font size */
+    display: inline-block;
+    margin: 0 10px; /* Add some spacing between the dice */
+  }
+  
+  #roll-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #roll-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+
 @media (min-width: 64rem) {
 
     body {
@@ -334,8 +364,6 @@ footer {
     nav ul li a {
         min-width: 1%;
     }
-
-
 
     .creature-card {
         flex-basis: calc(33.33% - 10px);
